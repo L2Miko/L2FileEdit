@@ -1,0 +1,19 @@
+FS = "\t";
+RECCNT = -1;
+HEADER = 1;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+ORD_IGNORE = NO;
+
+{
+	UINT NpcId;
+	UINT UNK;
+	UINT Top_Id;
+	UINT Pant_Id;
+	UINT Glove_Id;
+	UINT Shoe_Id;
+	UINT Hair_Accessory_Id;
+	UINT UNK2;
+	UINT Weapon_Id;
+	UINT Shield_Id;
+}

@@ -1,0 +1,17 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+ORD_IGNORE = NO;
+
+{
+	UNICODE character;
+	UNICODE anim_lista[600];
+	UNICODE anim_listb[600];
+	UNICODE anim_listc[600];
+	UNICODE anim_listd[430];
+	FLOAT UNK1[296];
+	UINT UNK4[125];
+}

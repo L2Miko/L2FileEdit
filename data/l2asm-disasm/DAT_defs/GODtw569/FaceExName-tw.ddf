@@ -1,0 +1,13 @@
+FS = "\t";
+RECCNT = -1;
+HEADER = NO;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+ORD_IGNORE = NO;
+
+{
+	UINT id;
+	UINT itemID;
+	UNICODE name;
+	ASCF desc;
+}

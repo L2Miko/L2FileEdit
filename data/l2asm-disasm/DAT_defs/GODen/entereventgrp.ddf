@@ -1,0 +1,18 @@
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+ORD_IGNORE = NO;
+
+{
+	UINT id;
+	CHAR UNK_0;	//may be empty ASCF as well...
+	ASCF skill_sound;
+	FLOAT sound_vol;
+	FLOAT sound_rad;
+	UINT isrise;
+	UINT spawn_type;
+	UNICODE effect_name;
+	UNICODE anim_name;
+}

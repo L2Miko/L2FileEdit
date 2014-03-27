@@ -1,0 +1,15 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+ORD_IGNORE = NO;
+
+{
+	UNICODE tag;
+	ASCF anim_name;
+	ASCF anim_name2;
+	ASCF anime_name3;
+	INT unk0;
+}

@@ -1,0 +1,43 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t";
+HEADER = 1;
+RECCNT = -1;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT tag;
+	UINT id;
+	UINT drop_type;
+	UINT drop_anim_type;
+	UINT drop_radius;
+	UINT drop_height;
+	UINT UNK_0;
+	UNICODE drop_mesh1;
+	UNICODE drop_mesh2;
+	UNICODE drop_mesh3;
+	UNICODE drop_tex1;
+	UNICODE drop_tex2;
+	UNICODE drop_tex3;
+	UNICODE drop_extratex1;
+	UINT newdata[8];
+	UNICODE icon[5];
+	INT durability;
+	UINT weight;
+	UINT material;
+	UINT crystallizable;
+	HEX UNK_1;
+	UINT UNK_2_cnt;
+	UINT UNK_2_tab[UNK_2_cnt];
+	UINT UNK_3[3];
+	UNICODE fort[2];
+	ASCF drop_sound;
+	UINT UNK_4;
+	MTX mesh_tex_pair;
+	UNICODE item_sound;
+	UNICODE equip_sound;
+	UINT stackable;
+	UINT family;
+	UINT grade;
+}

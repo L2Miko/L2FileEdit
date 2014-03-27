@@ -1,0 +1,19 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+ORD_IGNORE = NO;
+
+{
+	UINT quest_id;
+	UINT npc_id;
+	UCHAR unk0;
+	UINT lvl;
+	CNTR cnt0;
+	INT unk1[cnt0];
+	FLOAT quest_x;
+	FLOAT quest_y;
+	FLOAT quest_z;
+}

@@ -1,0 +1,14 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = -1;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	WORD unk[2];
+	UINT unk1[2];
+	FLOAT unk2[6];
+	UCHAR colors[8];
+	INT Opacity;
+}

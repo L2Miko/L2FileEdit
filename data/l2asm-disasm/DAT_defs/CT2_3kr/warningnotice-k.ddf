@@ -1,0 +1,11 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = 1;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+MAGIC = 0;
+
+{
+	ASCF notice;
+}

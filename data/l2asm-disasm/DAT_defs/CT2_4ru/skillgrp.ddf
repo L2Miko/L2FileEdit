@@ -1,0 +1,30 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT skill_id;
+	UINT skill_level;
+	UINT oper_type;
+	UINT mp_consume;
+	INT cast_range;
+	UINT cast_style;
+	UINT UNK_0;
+	FLOAT hit_time;
+	INT is_magic;
+	UNICODE ani_char;
+	UNICODE desc;
+	UNICODE icon_name;
+	UNICODE icon_name2;
+//	UINT extra_eff;
+	UINT is_ench;
+	UINT ench_skill_id;
+	UINT hp_consume;
+	ASCF nonetext;
+	INT UNK_1;
+	INT UNK_2;
+	INT UNK_3;
+}

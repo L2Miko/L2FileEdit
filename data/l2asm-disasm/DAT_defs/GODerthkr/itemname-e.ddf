@@ -1,0 +1,16 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t"; 
+HEADER = 1; 
+RECCNT = OFF; 
+MTXCNT_OUT = 1; 
+MATCNT_OUT = 1; 
+ORD_IGNORE = 0; 
+{ 
+   UINT id;
+   UNICODE name; 
+   UNICODE add_name; 
+   ASCF description; 
+   INT popup;
+   INT SetItemGrp_id;
+   INT unk;
+}

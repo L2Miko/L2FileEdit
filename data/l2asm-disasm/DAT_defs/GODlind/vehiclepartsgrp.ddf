@@ -1,0 +1,25 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = YES;
+
+{
+	UINT id;
+	UNICODE name;
+	CNTR cnt1;
+	INT tab1[cnt1];
+	CNTR cnt2;
+	INT tab2[cnt2];
+	UINT unk1;
+	UINT unk2;
+	MTX mshtex;
+	UNICODE sounds[5];
+	UINT snd2cnt;
+	UNICODE sounds2[snd2cnt];
+}
+
+/*
+	seems fine fwiw
+*/

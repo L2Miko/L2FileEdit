@@ -1,0 +1,12 @@
+FS = "\t";
+RECCNT = -1;
+HEADER = 1;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+ORD_IGNORE = NO;
+
+{
+	UINT Id;
+	INT Points;
+	INT UNK;
+}

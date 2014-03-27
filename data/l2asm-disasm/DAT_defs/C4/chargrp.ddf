@@ -1,0 +1,44 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = 15;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UNICODE face_icon;
+	UINT cnt_hm;
+	UINT cnt_ht;
+	UINT cnt_fm;
+	UINT cnt_ft;
+	UNICODE hair_mesh[cnt_hm];
+	UNICODE hair_tex[cnt_ht];
+	UNICODE face_mesh[cnt_fm];
+	UNICODE face_tex[cnt_ft];
+	UNICODE body_mesh[4];
+	UNICODE body_tex[4];
+	UNICODE attack_eff;
+	UINT walkanimframe;
+	UINT cnt_att;
+	UINT cnt_def;
+	UINT cnt_dmg;
+	UNICODE snd_att[cnt_att];
+	UNICODE snd_def[cnt_def];
+	UNICODE snd_dmg[cnt_dmg];
+	UINT cnth;
+	UNICODE voice_snd_hand[cnth];
+	UINT cnt1h;
+	UNICODE voice_snd_1hs[cnt1h];
+	UINT cnt2h;
+	UNICODE voice_snd_2hs[cnt2h];
+	UINT cntd;
+	UNICODE voice_snd_dual[cntd];
+	UINT cntp;
+	UNICODE voice_snd_pole[cntp];
+	UINT cntb;
+	UNICODE voice_snd_bow[cntb];
+	UINT cntu;
+	UNICODE voice_snd_unknown[cntu];
+	UINT cntf;
+	UNICODE voice_snd_fist[cntf];
+}

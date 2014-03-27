@@ -1,0 +1,66 @@
+// Tauti (06.07.2012). Editors: Anonymous, Allen (L2Sexi), Hint.
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT tag;
+	UNICODE class;
+	UNICODE mesh;
+	UINT cnt_tex1;
+	UNICODE tex1[cnt_tex1];
+	UINT cnt_tex2;
+	UNICODE tex1[cnt_tex2];
+	CNTR cnt_dtab1;
+	UINT dtab1[cnt_dtab1];
+	FLOAT npc_speed;
+	UINT unk0_cnt;
+	UNICODE unk0_tab[unk0_cnt];
+	CNTR cnt_snd1;
+	UNICODE snd1[cnt_snd1];
+	CNTR cnt_snd2;
+	UNICODE snd2[cnt_snd2];
+	CNTR cnt_snd3;
+	UNICODE snd3[cnt_snd3];
+
+	UINT rb_effect_on;
+	UNICODE rb_effect_1; 
+		ENBBY = [(rb_effect_on:-1,1)]; ENBBY = [(rb_effect_on:-2,2)];ENBBY = [(rb_effect_on:-4,4)];
+	FLOAT rb_effect_fl_1; 
+		ENBBY = [(rb_effect_on:-1,1)]; ENBBY = [(rb_effect_on:-2,2)];ENBBY = [(rb_effect_on:-4,4)];
+	UNICODE rb_effect_2; 
+		ENBBY = [(rb_effect_on:-2,2)];ENBBY = [(rb_effect_on:-4,4)];
+	FLOAT rb_effect_fl_2; 
+		ENBBY = [(rb_effect_on:-2,2)];ENBBY = [(rb_effect_on:-4,4)];
+	UNICODE rb_effect_3; 
+		ENBBY = [(rb_effect_on:-1,3)];ENBBY = [(rb_effect_on:-4,4)];
+	FLOAT rb_effect_fl_3; 
+		ENBBY = [(rb_effect_on:-1,3)];ENBBY = [(rb_effect_on:-4,4)];
+	UNICODE rb_effect_4; 
+		ENBBY = [(rb_effect_on:-4,4)];
+	FLOAT rb_effect_fl_4; 
+		ENBBY = [(rb_effect_on:-4,4)];
+
+	CNTR unk1_cnt;
+	UINT unk1_tab[unk1_cnt];
+
+	CNTR unk2_cnt;
+	UINT unk2_tab[unk2_cnt];
+
+	UNICODE effect;
+	UINT UNK_3;
+	FLOAT sound_rad;
+	FLOAT sound_vol;
+	FLOAT sound_rnd;
+	UINT quest_be;
+	UINT class_lim_?;
+	UINT npcend_cnt;
+	ASCF npcend[npcend_cnt];
+	UINT unk1[4];
+	FLOAT UnknownFloat;
+	ASCF icon; 
+	UINT UnknownNewInt; // 28-11-2012 update , sakaszli
+}

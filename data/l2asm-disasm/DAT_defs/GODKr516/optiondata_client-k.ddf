@@ -1,0 +1,23 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT id; 
+	UINT level?; 
+	UINT var_of_level?; 
+	ASCF effect1_desc; 
+	ASCF effect2_desc; 
+	ASCF effect3_desc?; 
+}
+
+/*
+	Originally submitted by
+	czardadius
+
+	remark from me: last entry is a gamble -
+	- may be char, may be ascf, etc.
+*/

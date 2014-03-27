@@ -1,0 +1,23 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT skill_id;
+	UINT level;
+	UINT id2;
+	CNTR cnt0;
+	UINT list1[cnt0];
+	UINT val[8];
+	CNTR cnt1;
+	UINT list2[cnt1];
+	UINT list3[cnt1];
+	CNTR cnt2;
+	UINT list4[cnt2];
+	UINT list5[cnt2];	
+	UINT unk0;
+}

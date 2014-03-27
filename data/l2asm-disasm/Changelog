@@ -1,0 +1,92 @@
+1.4.1
+	updated to Freya (ct2.5)
+	version bump
+	chargrp.ddf from ct2.5 have been backported a bit too
+1.4.0
+	updated to Gracia Final (ct2.4)
+	rebuilt with fresh toolchain and more modern flex -
+	  - ancient flex I used previously didn't manage eula file :)
+1.3.1
+        some debug verbosity was left active in previous version
+1.3.0
+	expanded CNTR handling
+	minor ddf changes
+	revised documentation
+	verbose syntax error reporting
+1.2.0
+	change in versioning (major.minor.no functional code change)
+	ct2.3 support
+	ddf changes, some going way back in chronicles
+		(mainly weapongrp, armorgrp, etcitemgrp)
+	ENBBY can use bit masks now
+	compiled with -march=pentium4 -mfpmath=sse
+1.111
+	added ddfs for russian version
+	updated some types in chargrp.ddf
+1.110
+	added proper MAT2 for ct2+, +ddf update(s)
+	added -o for selecting float output type
+	NaNs are represented in disassembled files and encoded back 1-1
+	misc updates in docs
+1.093
+	proper huntingzone-e for all chronicles where it exists
+	updated ISSUES file
+	Full CT2 support this time :)
+1.092
+	erm.. CT1.5 support, not CT2
+1.091
+	CT2 support
+	added "workaround" for huntingzone-e (and updated ISSUES file)
+1.09
+	adjusted weapongrp.ddf for all chronicles
+	also read comment at the end of that ddf file
+1.08
+	modified chargrp.ddf - magic no longer needed
+1.072
+	spelling errors
+1.071
+	added linux build. It requires glibc 2.7
+1.07
+	revised docs
+	some tiny changes
+1.06
+	additions and changes (pointless to list)
+	adjusted ddfs
+	new types - MTX2, FILLER, WORD, UWORD
+	new controls - MAGIC
+	Fully unicode aware with plenty of options
+	READ: MANUAL, ISSUES
+	For lazy bums there's also diff -u included :)
+0.98
+	tiny bugfix - ORG_IGNORE was ... ignored
+	added excellent questname-e.ddf comments by czardadius
+0.972	added missing Interlude ddfs
+	cleanup in all weapongrp.ddf files
+	all crlf -> lf
+0.971	adjusted Interlude ddf files (weapongrp, systemmsg, npcgrp)
+0.97	float output as earlier :)
+0.96	float output changed
+	accidental debug print of id from 0.951 removed
+	fixed zonename-e.ddf (format changed in "big" post-c5 patch)
+0.95	grammar change for ENBBY (allows AND and OR conditions)
+	tiny error message bugfix
+0.942	added gametip-e.ddf
+0.941	irrelevant tiny fix
+0.94	fixed ddfs of npcgrp and questname
+	no more empty output file after errors
+	C quotes must be properly closed at the end of the file too
+0.93	slightly more verbose on errors (mainly l2disasm)
+	C5 support added
+	minimal change to scanner (you don't have to put spaces near '=')
+	support for both C and C++ style comments
+	static openbsd binaries
+0.92	l2asm vs. recipe-c bugfix
+0.91	tiny bug fixed with exporting grammars that have MAT fields
+0.90	subtle uni conversion fix
+0.89	l2asm bug fixed, zonename-e.ddf revision (thx to loopback)
+0.88	bugfixes, more ddfs
+0.872	more C3 ddfs
+0.871	2 more ddfs
+0.87	more verbosity, more manual, new ddf files
+0.86	small changes, more ddfs
+0.85	bugfixes, new type (CNTR), more C4's ddf files

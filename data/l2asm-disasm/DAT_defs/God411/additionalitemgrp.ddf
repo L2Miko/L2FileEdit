@@ -1,0 +1,13 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT ID;
+	UINT nID[12];
+	INT Null[2];
+}

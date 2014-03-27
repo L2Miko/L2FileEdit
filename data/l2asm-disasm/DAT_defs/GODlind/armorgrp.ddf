@@ -1,0 +1,92 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = YES;
+
+{
+	UINT tag;
+	UINT id;
+	UINT drop_type;
+	UINT drop_anim_type;
+	UINT drop_radius;
+	UINT drop_height;
+	UINT UNK_0;
+	UNICODE drop_mesh1;
+	UNICODE drop_mesh2;
+	UNICODE drop_mesh3;
+	UNICODE drop_tex1;
+	UNICODE drop_tex2;
+	UNICODE drop_tex3;
+	UNICODE drop_extratex1;
+	UINT newdata[8];
+	UNICODE icon[5];
+	INT durability;
+	UINT weight;
+	UINT material;
+	UINT crystallizable;
+	HEX UNK_3;
+//	CHEX specdat[4];
+	UINT UNK_4_cnt;
+	UINT UNK_4_tab[UNK_4_cnt];
+	UINT UNK_5[3];
+	UNICODE timetab;
+	UINT body_part;
+
+	MTX m_HumnFigh;
+	MTX3 m_HumnFigh_add;
+	MTX f_HumnFigh;
+	MTX3 f_HumnFigh_add;
+
+	MTX m_DarkElf;
+	MTX3 m_DarkElf_add;
+	MTX f_DarkElf;
+	MTX3 f_DarkElf_add;
+
+	MTX m_Dorf;
+	MTX3 m_Dorf_add;
+	MTX f_Dorf;
+	MTX3 f_Dorf_add;
+
+	MTX m_Elf;
+	MTX3 m_Elf_add;
+	MTX f_Elf;
+	MTX3 f_Elf_add;
+
+	MTX m_HumnMyst;
+	MTX3 m_HumnMyst_add;
+	MTX f_HumnMyst;
+	MTX3 f_HumnMyst_add;
+
+	MTX m_OrcFigh;
+	MTX3 m_OrcFigh_add;
+	MTX f_OrcFigh;
+	MTX3 f_OrcFigh_add;
+
+	MTX m_OrcMage;
+	MTX3 m_OrcMage_add;
+	MTX f_OrcMage;
+	MTX3 f_OrcMage_add;
+
+	MTX m_Kamael;
+	MTX3 m_Kamael_add;
+	MTX f_Kamael;
+	MTX3 f_Kamael_add;
+
+	MTX NPC;
+	MTX3 NPC_add;
+
+	UNICODE att_eff;
+	UINT item_sound_cnt;
+	UNICODE item_sound[item_sound_cnt];
+	UNICODE drop_sound;
+	UNICODE equip_sound;
+	UINT UNK_6;
+	UINT UNK_7;
+	UINT armor_type;
+	UINT crystal_type;
+	UINT avoid_mod;
+	UINT UNK_8[3];
+}                

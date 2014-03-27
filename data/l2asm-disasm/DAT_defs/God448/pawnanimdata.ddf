@@ -1,0 +1,19 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t";
+RECCNT = -1;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+ORD_IGNORE = NO;
+
+{
+//INT syf;
+	UNICODE character;
+	UNICODE anim_list[741];
+	UNICODE anim_list[741];
+	UNICODE anim_list[741];
+	UNICODE anim_list[7];
+	FLOAT UNK1[296];
+	UINT UNK4[76];
+	UINT UNK43[49];
+}

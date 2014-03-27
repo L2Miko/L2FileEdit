@@ -1,0 +1,35 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT tag_?;
+	UINT quest_id;
+	UINT quest_prog;
+	ASCF main_name;
+	ASCF prog_name;
+	ASCF description;
+	CNTR cnt1;
+	INT tab1[cnt1];
+	CNTR cnt2;
+	INT tab2[cnt2];
+	FLOAT quest_x;
+	FLOAT quest_y;
+	FLOAT quest_z;
+	UINT UNK_npc1_?;
+	UINT UNK_npc2_?;
+	UINT UNK_npc3_?;
+	ASCF entity_name;
+	UINT UNK_0;
+	UINT UNK_1;
+	UINT UNK_2;
+	UINT UNK_3;
+	FLOAT entity_x_?;
+	FLOAT entity_y_?;
+	FLOAT entity_z_?;
+	ASCF race_restricion;
+	ASCF short_description;
+}

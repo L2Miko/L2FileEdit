@@ -1,0 +1,15 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t";
+RECCNT =1;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+ORD_IGNORE = NO;
+
+{
+	MAT CNT;
+	UINT CNT2;
+	UINT list1[CNT2];
+	UINT list2[CNT2];
+	UINT list3[CNT2];
+}

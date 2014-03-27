@@ -1,0 +1,15 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t";
+RECCNT =OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+ORD_IGNORE = NO;
+
+{
+	UINT tag;
+	UINT list1[2];
+		ENBBY = [(tag,1)];
+	UINT list2[134];
+		ENBBY = [(tag:8192,8192)];
+}

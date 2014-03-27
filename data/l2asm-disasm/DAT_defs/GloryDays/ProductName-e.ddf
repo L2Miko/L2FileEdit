@@ -1,0 +1,17 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = -1;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT id;
+	UNICODE name;
+	ASCF str;
+	UNICODE icon;
+	ASCF Desc;
+}
+
+
+//by Sakaszli, 26-10-2012

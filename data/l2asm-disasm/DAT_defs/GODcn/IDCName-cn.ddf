@@ -1,0 +1,10 @@
+FS = "\t";
+RECCNT = 1;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+ORD_IGNORE = NO;
+
+{
+	ASCF html;
+}

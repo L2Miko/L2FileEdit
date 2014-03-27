@@ -1,0 +1,21 @@
+//early version submitted by czardadius
+
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT id;
+	UINT hunting_type;
+	UINT level;
+	UINT unk_1;
+	FLOAT loc_x;
+	FLOAT loc_y;
+	FLOAT loc_z;
+	ASCF extra;
+	UINT affiliated_area_id;
+	ASCF name;
+}

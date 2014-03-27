@@ -1,0 +1,22 @@
+FS = "\t";
+RECCNT = -1;
+HEADER = 1;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+ORD_IGNORE = NO;
+
+{
+	UINT list_1;
+	UINT skill_id;
+	UINT skill_maxlvl;
+	UINT list_2;
+	UINT list_3;
+	UINT char_lvl;
+	UINT skill2_id;
+	UINT skill2_maxlvl;
+	UINT list_4;
+	ASCF name;
+	ASCF icons[2];
+	UCHAR cnt;
+	ASCF info[cnt];
+}

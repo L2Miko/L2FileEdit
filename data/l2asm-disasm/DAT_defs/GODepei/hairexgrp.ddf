@@ -1,0 +1,117 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t"; 
+HEADER = 1; 
+RECCNT = 16; 
+MTXCNT_OUT = 1; 
+MATCNT_OUT = 1; 
+ORD_IGNORE = 0; 
+{ 
+   UINT cnt;
+   INT list[10];
+   UNICODE Name[2];
+   UINT id_a;
+   UNICODE Name2[id_a];
+   UINT id2_a;
+   UNICODE Name3[id2_a];
+   INT UNK;
+   UNICODE Name4[2];
+
+   INT list[10];
+   UNICODE Name[2];
+   UINT id_b;
+   UNICODE Name2[id_b];
+   UINT id2_b;
+   UNICODE Name3[id2_b];
+   INT UNK;
+   UNICODE Name4[2];
+
+   INT list[10];
+   UNICODE Name[2];
+   UINT id_c;
+   UNICODE Name2[id_c];
+   UINT id2_c;
+   UNICODE Name3[id2_c];
+   INT UNK;
+   UNICODE Name4[2];
+
+   INT list[10];
+   UNICODE Name[2];
+   UINT id_d;
+   UNICODE Name2[id_d];
+   UINT id2_d;
+   UNICODE Name3[id2_d];
+   INT UNK;
+   UNICODE Name4[2];
+
+   INT list[10];
+   UNICODE Name[2];
+   UINT id_e;
+   UNICODE Name2[id_e];
+   UINT id2_e;
+   UNICODE Name3[id2_e];
+   INT UNK;
+   UNICODE Name4[2];
+   
+   INT list[10];
+   UNICODE Name[2];
+   UINT id_f;
+   UNICODE Name2[id_f];
+   UINT id2_f;
+   UNICODE Name3[id2_f];
+   INT UNK;
+   UNICODE Name4[2];
+
+   INT list[10];
+   UNICODE Name[2];
+   UINT id_g;
+   UNICODE Name2[id_g];
+   UINT id2_g;
+   UNICODE Name3[id2_g];
+   INT UNK;
+   UNICODE Name4[2];
+   
+   INT list[10];
+   UNICODE Name[2];
+   UINT id_h;
+   UNICODE Name2[id_h];
+   UINT id2_h;
+   UNICODE Name3[id2_h];
+   INT UNK;
+   UNICODE Name4[2];
+      
+   INT list[10];
+   UNICODE Name[2];
+   UINT id_i;
+   UNICODE Name2[id_i];
+   UINT id2_i;
+   UNICODE Name3[id2_i];
+   INT UNK;
+   UNICODE Name4[2];
+        
+   INT list[10];
+   UNICODE Name[2];
+   UINT id_j;
+   UNICODE Name2[id_j];
+   UINT id2_j;
+   UNICODE Name3[id2_j];
+   INT UNK;
+   UNICODE Name4[2];
+   
+   INT list[10];
+   UNICODE Name[2];
+   UINT id_k;
+   UNICODE Name2[id_k];
+   UINT id2_k;
+   UNICODE Name3[id2_k];
+   INT UNK;
+   UNICODE Name4[2];
+   
+   INT list[10];
+   UNICODE Name[2];
+   UINT id_l;
+   UNICODE Name2[id_l];
+   UINT id2_l;
+   UNICODE Name3[id2_l];
+   INT UNK;
+   UNICODE Name4[2];
+}

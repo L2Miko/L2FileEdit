@@ -1,0 +1,23 @@
+FS = "\t"; 
+HEADER = 1; 
+RECCNT = OFF; 
+MTXCNT_OUT = 1; 
+MATCNT_OUT = 1; 
+ORD_IGNORE = 0; 
+
+{ 
+   UINT item_id;
+   UINT name;
+   UINT additionalname;
+   INT popup;
+   UINT description;
+   UINT name_class;
+   UINT setid_1;
+   UINT effect_1;
+   UINT setid_2;
+   UINT effect_2;
+   UINT setid_3;
+   UINT effect_3;
+   UINT set_enchant_count;
+   UINT set_enchant_effect;
+}

@@ -1,0 +1,290 @@
+
+1 - DDF file format
+2 - Character conversions
+3 - Invoking
+
+------------------------------------------------------------------------
+1) DDF file format
+
+Those files are used to define how l2disasm and l2asm are supposed to treat L2's dat files. A DDF file is a shortcut for "dat definition file", and is common for both of them. Also, its format is a bit similar to C language.
+
+a) comments
+
+You can use C, C99 and shell-like comments - that is /* ... */ , // and # respectively
+
+b) quoting
+
+It's functionally implemented, but otherwise not used, besides global FS variable (see below)
+
+c) special literals
+
+NO = 0
+YES = 1
+OFF = -1
+
+L2asm and l2disasm treat them numerically, whenever they are encountered.
+
+d) control variables
+
+These control general behaviour of the program. They are always specified at the top of the ddf file.
+
+d.1) FS
+
+default:
+FS = "\t";
+
+FS is a literal string (like in sed) used as a field separator. You can use any string you like. \t is detected and replaced by tabulation character. Any other \x quotes x.
+
+L2asm ignores this field and always expects tabulation as a field separator, so keep that in mind.
+
+d.2) RECCNT
+
+default:
+RECCNT = OFF;
+
+RECCNT is a variable used to specify number of the fields. Pretty much all dat files, except very few ones (e.g. chargrp.dat), include this information implicitly.
+
+L2disasm will explicitly read only RECCNT rows and assume that the counter stored in dat files is not available.
+L2asm will not write one into compiled file.
+
+d.3) MTXCNT_OUT, MATCNT_OUT
+
+default:
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+
+This boolean variable controls output of counters in MTX/MTX2/MTX3 and MAT/MAT2 compounds. It could be useful for prettines of exported file.
+
+L2asm ignores those fields and silently assumes they're set to YES.
+
+d.4) ORD_IGNORE
+
+default:
+ORD_IGNORE = NO;
+
+A variable controlling if l2disasm should ignore per-field ORD properties.
+L2asm always ignores per-field ORD properties, as well as this control variable.
+
+d.5) HEADER
+
+default:
+HEADER = YES;
+
+L2disasm uses it to decide, if the first row should be a line with column names.
+L2asm uses it to decide, if the first row is a line with column names.
+
+d.6) MAGIC
+
+default:
+MAGIC = 0;
+
+Amount of unusual dwords appearing at the end of a file. No dat file uses it now.
+
+L2disasm ignores this field (no point outputting it).
+L2asm writes MAGIC 0s at the end, before SafePackage marker.
+
+e) Main ddf section
+
+The main body of some ddf file could look like:
+
+{
+        UINT ID;
+        UINT val1;
+        UINT val_enb;
+        UINT cnt;
+        ASCF str1;
+                ORD = 1;
+        UINT val2[10];
+                SKIPIF = [(1, 3), (4 .. 8, -4 .. -2)];
+        ASCF str2;
+        ASCF str3;
+                CNTR cntc;
+                UINT tabc[cntc];
+        CHAR c;
+        UINT val3[val1];
+                SOFT = 4;
+        MTX tab[cnt];
+                SOFT = 4;
+                SOFTM = 2;
+                SOFTT = 3;
+                ENBBY = [(val_enb,1)];
+                ENBBY = [(val_enb:2,2),(val1,3)];
+        FILLER void{50};
+        MTX3 arrwtf;
+}
+
+Each field consists of a type and an ident. Additionally, each field can have additional properties.
+
+e.1) type
+
+Type must be one of the following (in round brackets - C's counterparts):
+
+UINT (uint32_t)
+HEX (uint32_t printed as hex)
+INT (int32_t)
+UWORD (uint16_t)
+WORD (int16_t)
+UCHAR (uint8_t)
+CHEX (uint8_t printed as hex)
+CHAR (int8_t)
+FLOAT (float)
+UNICODE
+ASCF
+MAT
+MAT2
+MTX
+MTX2
+MTX3
+FILLER
+CNTR
+
+ASCF is specific half-ascii/half-unicode format used commonly in dat files.
+UNICODE is a plain unicode with int size in front of the string.
+FLOAT is capable of saving and encoding back NaN values. It uses NaN(0xX) format, where X is
+        replaced by arbitrary hex value (32bits) of the float.
+
+Both of them are written as UTF-8, unless forced otherwise - see section 2 for details.
+
+CNTR is a special 1-n bytes "packed" counter (identical counter is used by ASCF internally).
+
+The other fields can be described as:
+
+MTX {
+        INT cntm;
+        UNICODE mesh[cntm];
+        INT cntt;
+        UNICODE text[cntt];
+}
+
+MTX2 {
+        INT cntm;
+        {
+                UNICODE mesh;
+                UINT val1;
+                UCHAR val2;
+        } submtx[cntm]
+        INT cntt;
+        UNICODE text[cntt];
+}
+
+MTX3 {
+        INT cntm;
+        {
+                UNICODE mesh;
+                UCHAR val[2];
+        } submtx[cntm]
+        INT cntt;
+        UNICODE text[cntt];
+        UNICODE textext;
+}
+
+MAT {
+        INT cnt;
+        {
+                INT id;
+                INT val;
+        } mats[cnt];
+}
+
+MAT2 {
+        INT cnt;
+        INT extra;
+        {
+                INT id;
+                INT val;
+        } mats[cnt];
+}
+
+e.2) ident
+
+Ident must start with a non-number. It may contain anything except:
+
+whitespaces [](){}=,/*\#:;
+
+Square brackets after ident denote a table - its counter can be controlled by a direct number (we'll call it a static table), or by the name of some other field (we'll call it a dynamic table). In the latter case, the field must be of numeric type. Only single dimensional tables are allowed. 
+
+FILLER type uses curly braces to distinguish itself from regular tables. It fills {cnt} bytes with predefined value. It uses only one column in a decoded file in form counter,value . FILLER cannot be a table - so for example, FILLER dat{10}[10] is not allowed (and pointless either way).
+
+e.3) properties
+
+Every field may have following properties:
+
+ENBBY controls which other fields (only integer types) enable current one. This is primarily a feature for weapongrp.dat - that has more fields for 2H weapons. In the example below, MTX dynamic table 'tab' will be read from the dat file only, if ( val_enb == 1 || ( (val_enb & 2) == 2 && val1 == 3 ) ). You can use colon to specify mask right after the referenced identifier. If the referenced field is a table, comaprison will be done with the 1st element of the table.
+
+        MTX tab[cnt];
+                ENBBY = [(val_enb,1)];
+                ENBBY = [(val_enb:2,2),(val1,3)];
+
+ORD controls order. ORD == OFF makes the l2disasm not output the whole column at all. Any other integer sets the relative order. The remaining fields are written in the default order at the end. In the example above the first field will be ASCF str1. The rest will come after it with the default order. Mentioned earlier ORD_IGNORE variable can disable the custom order globally. L2asm ignores both order properties and the control variable. Sorting is stable (it preserves the original order in case of the same ORD value).
+
+SKIPIF is used to skip printing some of columns' data, depending on its values. Looking at the example below:
+
+        UINT val2[10];
+                SKIPIF = [(1, 3), (4 .. 8, -4 .. -2)];
+
+In such case, val2's certain values will be printed as empty strings:
+
+val2[1] if it equals 3
+val2[4] to val[8] if current column's value is in [-4 .. -2] inclusive.
+
+You can use float ranges for float fields, and integer ranges for integer-like fields. Specifying one number is like specifying the range 'number .. number'. Don't forget spaces around '..' (or range will be mistaken for invalid float number).
+
+Additionally:
+
+SOFT, SOFTM, SOFTT - these are properties that control, how many columns are to be printed, when a dynamic table is used. SOFT is for regular fields like UINT val3[val1] in the example above. SOFTM and SOFTT control the internals of MTX/MTX2/MTX3. SOFTM also controls MAT/MAT2.
+
+L2disasm updates the fields in the first pass, if they are not specified, or are too low. L2asm REQUIRES these properties to be set on all MTX/MTX2/MTX3, MAT/MAT2 and dynamic table columns. For easy generating DDF files for l2asm - please use l2disasm's -e option.
+
+------------------------------------------------------------------------
+2) Character conversions
+
+DAT files have two type of strings:
+
+ - plain UCS-2LE unicode
+ - hybrid 8-bit / UCS-2LE
+
+L2disasm always saves them as UTF-8.
+
+If -l flag is specified, it forces behaviour analogous to the one in older versions. In such case - strings are saved as almost-dumb conversions from ucs-2le to ascii (some basic transliterations are executed), or 1-1 from ascii to ascii. This will likely produce invalid utf-8, so remember about -l during l2asm execution.
+
+Regardless of the mode of operation - backslashes, tabs, nuls, crs, lfs are saved respectively as \\, \t, \0, \r and \n.
+
+ASCFs are saved as a,<string> or u,<string>. Initial code-letter is a hint how should it be treated later by l2asm.
+
+Another flag that can be used is -f, that will force all ASCF strings to be saved with 'a' hint (l2disasm), or force encoding as 8-bit regardless of the hint (l2asm). Note though, that if you operate in non-legacy mode, l2asm will usually fail in forced translation of complex charsets (kanji, etc.) to some plain 8-bit.
+
+Generally, -f should be used as an addition to -l, to get results like in pre-1.05 versions.
+
+Finally, -a lets you choose how 8-bit characters should be interpreted as. Default is ISO-8859-1, if nothing is specified.
+
+--------------------------------------------------------------------------
+3) Invoking
+
+
+l2disasm <-d ddf_file> [-o f|e] [-q] [-e export] input_file output_file
+
+-d is mandatory, and so are input and output files
+
+-e is optional, and outputs beautified ddf file with automatically updated options (particularly useful for SOFT* options for l2asm).
+
+-o is optional, selects between scientific output ('e') or standard floatish ('f') one. 'e' is "uglier", but usually guarantees perfect conversion
+
+-q overrides HEADER control variable, and suppresses printing header line
+
+-l force 'dumb' translation with basic transliterations
+
+-f force saving of all ASCF's with 'a' hint
+
+-a <chartab> let you select how 8-bit chars should be interpreted - defaults to ISO-8859-1
+
+
+
+l2asm <-d ddf_file> [-q] input_file output_file
+
+-q overrides HEADER variable - l2asm will assume header line is not present
+
+-l force 'dumb' translation with basic transliterations
+
+-f force encoding of all ASCF strings as 8-bit
+
+-a <chartab> let you select how 8-bit chars should be interpreted - defaults to ISO-8859-1

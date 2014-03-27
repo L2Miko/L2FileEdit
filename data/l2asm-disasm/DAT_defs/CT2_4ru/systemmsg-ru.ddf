@@ -1,0 +1,19 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT id;
+	UINT UNK_0;
+	ASCF message;
+	UINT group;
+	CHEX rgba[4];
+	ASCF item_sound;
+	ASCF sys_msg_ref;
+	UINT UNK_1[5];
+	ASCF sub_msg;
+	ASCF type;
+}

@@ -1,0 +1,20 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT nbr;
+	UINT zone_color_id;
+	UINT x_world_grid;
+	UINT y_world_grid;
+	FLOAT top_z;
+	FLOAT bottom_z;
+	ASCF zone_name;
+	INT coords?[6];
+	FLOAT unk01;
+	ASCF map;
+	UINT dupa;
+}

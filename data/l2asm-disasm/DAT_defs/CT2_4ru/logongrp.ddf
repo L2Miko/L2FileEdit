@@ -1,0 +1,16 @@
+FS = "\t";
+RECCNT = 8;//changed to 8 by METAJIJI
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+ORD_IGNORE = NO;
+
+{
+	FLOAT x;//changed type FROM INT to FLOAT  by METAJIJI
+	FLOAT y;//changed type FROM INT to FLOAT  by METAJIJI
+	FLOAT z;//changed type FROM INT to FLOAT  by METAJIJI
+	FLOAT yaw;//changed type FROM INT to FLOAT  by METAJIJI
+}
+
+
+//http://la2patch.ucoz.com/load/instrumenty_dlja_redaktirovanija_klienta/redaktor_dat_fajlov_by_metajiji/7-1-0-2

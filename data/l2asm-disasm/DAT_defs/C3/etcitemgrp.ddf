@@ -1,0 +1,30 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT tag;
+	UINT id;
+	UINT drop_type;
+	UINT drop_anim_type;
+	UINT drop_radius;
+	UINT drop_height;
+	UINT UNK_0;
+	UNICODE drop_mesh1;
+	UNICODE drop_tex1;
+	UNICODE icon[5];
+	INT durability;
+	UINT weight;
+	UINT material;
+	UINT crystallizable;
+	UINT type1;
+	MTX mesh_tex_pair;
+	UNICODE item_sound;
+	UNICODE equip_sound;
+	UINT stackable;
+	UINT family;
+	UINT grade;
+}

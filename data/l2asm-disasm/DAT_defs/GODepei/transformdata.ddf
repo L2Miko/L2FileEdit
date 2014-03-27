@@ -1,0 +1,16 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = -1;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT id;
+	UINT bin;
+	UINT val1;
+	UINT val2;
+	UNICODE str1;
+	UNICODE str2;
+	UINT unk[5];
+}

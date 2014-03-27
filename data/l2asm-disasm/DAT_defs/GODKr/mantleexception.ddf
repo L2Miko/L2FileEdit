@@ -1,0 +1,38 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+   UINT id;
+   UINT txt_cnt;
+   UINT rcid_1;ENBBY = [(txt_cnt:-1,1)];ENBBY = [(txt_cnt:-2,2)];ENBBY = [(txt_cnt:-4,4)];ENBBY = [(txt_cnt:-8,8)];
+   ASCF rctex_1;ENBBY = [(txt_cnt:-1,1)];ENBBY = [(txt_cnt:-2,2)];ENBBY = [(txt_cnt:-4,4)];ENBBY = [(txt_cnt:-8,8)];
+   UINT rcid_2;ENBBY = [(txt_cnt:-2,2)];ENBBY = [(txt_cnt:-4,4)];ENBBY = [(txt_cnt:-8,8)];
+   ASCF rctex_2;ENBBY = [(txt_cnt:-2,2)];ENBBY = [(txt_cnt:-4,4)];ENBBY = [(txt_cnt:-8,8)];
+   UINT rcid_3;ENBBY = [(txt_cnt:-1,3)];ENBBY = [(txt_cnt:-4,4)];ENBBY = [(txt_cnt:-8,8)];
+   ASCF rctex_3;ENBBY = [(txt_cnt:-1,3)];ENBBY = [(txt_cnt:-4,4)];ENBBY = [(txt_cnt:-8,8)];
+   UINT rcid_4;ENBBY = [(txt_cnt:-4,4)];ENBBY = [(txt_cnt:-8,8)];
+   ASCF rctex_4;ENBBY = [(txt_cnt:-4,4)];ENBBY = [(txt_cnt:-8,8)];
+   UINT rcid_5;ENBBY = [(txt_cnt:-1,5)];ENBBY = [(txt_cnt:-2,6)];ENBBY = [(txt_cnt:-8,8)];
+   ASCF rctex_5;ENBBY = [(txt_cnt:-1,5)];ENBBY = [(txt_cnt:-2,6)];ENBBY = [(txt_cnt:-8,8)];
+   UINT rcid_6;ENBBY = [(txt_cnt:-2,6)];ENBBY = [(txt_cnt:-8,8)];
+   ASCF rctex_6;ENBBY = [(txt_cnt:-2,6)];ENBBY = [(txt_cnt:-8,8)];
+   UINT rcid_7;ENBBY = [(txt_cnt:-1,7)];ENBBY = [(txt_cnt:-8,8)];
+   ASCF rctex_7;ENBBY = [(txt_cnt:-1,7)];ENBBY = [(txt_cnt:-8,8)];
+   UINT rcid_8;ENBBY = [(txt_cnt:-8,8)];
+   ASCF rctex_8;ENBBY = [(txt_cnt:-8,8)];
+   UINT rcid_9;ENBBY = [(txt_cnt:-1,9)];ENBBY = [(txt_cnt:-6,10)];ENBBY = [(txt_cnt:-4,12)];
+   ASCF rctex_9;ENBBY = [(txt_cnt:-1,9)];ENBBY = [(txt_cnt:-6,10)];ENBBY = [(txt_cnt:-4,12)];
+   UINT rcid_10;ENBBY = [(txt_cnt:-6,10)];ENBBY = [(txt_cnt:-4,12)];
+   ASCF rctex_10;ENBBY = [(txt_cnt:-6,10)];ENBBY = [(txt_cnt:-4,12)];
+   UINT rcid_11;ENBBY = [(txt_cnt:-1,11)];ENBBY = [(txt_cnt:-4,12)];
+   ASCF rctex_11;ENBBY = [(txt_cnt:-1,11)];ENBBY = [(txt_cnt:-4,12)];
+   UINT rcid_12;ENBBY = [(txt_cnt:-1,12)];ENBBY = [(txt_cnt:-1,13)];
+   ASCF rctex_12;ENBBY = [(txt_cnt:-1,12)];ENBBY = [(txt_cnt:-1,13)];
+   UINT rcid_13;ENBBY = [(txt_cnt:-1,13)];
+   ASCF rctex_13;ENBBY = [(txt_cnt:-1,13)];
+}

@@ -1,0 +1,24 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+    ASCF name;
+    UINT id;
+    UINT recipe_id;
+    UINT level;
+    UINT product_id;
+    UINT product_num;
+    UINT is_showtree;
+    UINT is_multiple_product;
+    UINT mp_consume;
+    UINT success_rate;
+    
+    UINT count;
+    UINT materials[count];
+    UINT materials[count];
+    UINT materials[count];
+}  

@@ -1,0 +1,18 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = -1;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT ID;
+	ASCF Name;
+	ASCF Dest;
+	UINT Unk1;
+	ASCF Unk2[2];
+	UINT Unk3;
+	UINT num;
+	ASCF Text;
+	UINT Unk5[4];
+}

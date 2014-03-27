@@ -1,0 +1,91 @@
+//early version submitted by Allen (L2Sexi Server)
+//Fixed by sakaszli
+FS = "\t";
+HEADER = 1;
+RECCNT = -1;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{ 
+   UINT tag_?;
+   UINT quest_id;
+   INT quest_prog; 
+   ASCF main_name; 
+   ASCF prog_name; 
+   ASCF description; 
+   CNTR cnt0;            //num of items to get 
+   INT items[cnt0];         //list of items to get by item_id 
+   CNTR cnt1;            //count of the items from cnt1 (should be same as cnt1) 
+   INT num_items[cnt1];      //num of each coressponding item (0 = infinity) 
+   CNTR SAKI_UNK;            //num of items to get 
+   INT UNKNOWN_TABLE[SAKI_UNK];         //list of items to get by item_id
+   FLOAT quest_x;         //x coord of current "pin" on map 
+   FLOAT quest_y;         //y coord of current "pin" on map 
+   FLOAT quest_z;         //z coord of current "pin" on map 
+   UCHAR cnt2;
+   FLOAT quest_x_1;ENBBY = [(cnt2:-1,1)];ENBBY = [(cnt2:-2,2)];ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_y_1;ENBBY = [(cnt2:-1,1)];ENBBY = [(cnt2:-2,2)];ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_z_1;ENBBY = [(cnt2:-1,1)];ENBBY = [(cnt2:-2,2)];ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_x_2;ENBBY = [(cnt2:-2,2)];ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_y_2;ENBBY = [(cnt2:-2,2)];ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_z_2;ENBBY = [(cnt2:-2,2)];ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_x_3;ENBBY = [(cnt2:-1,3)];ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_y_3;ENBBY = [(cnt2:-1,3)];ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_z_3;ENBBY = [(cnt2:-1,3)];ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_x_4;ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_y_4;ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_z_4;ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_x_5;ENBBY = [(cnt2:-1,5)];ENBBY = [(cnt2:-2,6)];ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_y_5;ENBBY = [(cnt2:-1,5)];ENBBY = [(cnt2:-2,6)];ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_z_5;ENBBY = [(cnt2:-1,5)];ENBBY = [(cnt2:-2,6)];ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_x_6;ENBBY = [(cnt2:-2,6)];ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_y_6;ENBBY = [(cnt2:-2,6)];ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_z_6;ENBBY = [(cnt2:-2,6)];ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_x_7;ENBBY = [(cnt2:-1,7)];ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_y_7;ENBBY = [(cnt2:-1,7)];ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_z_7;ENBBY = [(cnt2:-1,7)];ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_x_8;ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_y_8;ENBBY = [(cnt2:-8,8)];
+   FLOAT quest_z_8;ENBBY = [(cnt2:-8,8)];
+   //FLOAT quest_x_9;ENBBY = [(cnt2:-1,9)];ENBBY = [(cnt2:-6,10)];ENBBY = [(cnt2:-4,12)];
+   //FLOAT quest_y_9;ENBBY = [(cnt2:-1,9)];ENBBY = [(cnt2:-6,10)];ENBBY = [(cnt2:-4,12)];
+   //FLOAT quest_z_9;ENBBY = [(cnt2:-1,9)];ENBBY = [(cnt2:-6,10)];ENBBY = [(cnt2:-4,12)];
+   //FLOAT quest_x_10;ENBBY = [(cnt2:-6,10)];ENBBY = [(cnt2:-4,12)];
+   //FLOAT quest_y_10;ENBBY = [(cnt2:-6,10)];ENBBY = [(cnt2:-4,12)];
+   //FLOAT quest_z_10;ENBBY = [(cnt2:-6,10)];ENBBY = [(cnt2:-4,12)];  
+ 
+   INT UNK_VAL[cnt2];
+   UCHAR UNK_2;
+   UINT lvl_min;         //lvl req to start quest 
+   UINT lvl_max;         //recommended lvl max 
+   UINT quest_type;         //0 = quests that lead to rewards (varka, summoning rb, coin quest, etc), 1 = quests that lead to special items (lures, wedding dress), 2 = repeatable, 3 = one time 
+   ASCF entity_name;         // 
+   UINT get_item_in_quest;      //1 = get item in quest part, 0 = no item obtained in quest 
+   UINT UNK_3;            //1 = same tab stack, 0 = end of stack (ex: |11110|10| if ur in the 2nd stack id 6 or 7 in quest prog |12345|67| the displayed stack would be |167| in the display) 
+   UINT UNK_4;            //no clue 
+   CNTR UNK_5;      //who starts the quest 
+   UINT contact_npc_id[UNK_5];            //no clue 
+   FLOAT contact_npc_x;      //start quest x_loc 
+   FLOAT contact_npc_y;      //start quest x_loc 
+   FLOAT contact_npc_z;      //start quest x_loc 
+   ASCF restricions;         //can be race or quest pre-reqs 
+   ASCF short_description; 
+   UCHAR cnt3;      //race restriction count 
+   UCHAR UNK_6;      //id of class that can do quest 
+		ENBBY = [(cnt3:64,64)];
+   INT req_class[cnt3];      //id of class that can do quest 
+   CNTR cnt4;            //item quest restriction start count 
+   INT req_item[cnt4];      //id of items needed to do quest 
+   UINT clan_pet_quest;      //0 = reg quest, 1 = pet/clan quest 
+   UINT req_quest_complete;   //id of quest that must be completed first 
+   UINT UNK_7;            //unknown all 0 
+   UINT area_id;         //area id (goddard, rune, giran, etc) 
+   UINT UNK_8;
+   CNTR cnt5;
+   INT tab5[cnt5];
+   CNTR cnt6;
+   INT tab6[cnt6];
+   CNTR cnt7;
+   INT tab7[cnt7];
+}

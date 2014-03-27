@@ -1,0 +1,38 @@
+//submitted by czardadius
+
+FS = "\t"; 
+HEADER = 1; 
+RECCNT = OFF; 
+MTXCNT_OUT = 1; 
+MATCNT_OUT = 1; 
+ORD_IGNORE = 0; 
+
+{ 
+   UINT id;
+   UNICODE name; 
+   UNICODE add_name; 
+   ASCF description; 
+   INT popup;
+   ASCF set_ids;
+   ASCF set_bonus_desc; 
+   ASCF set_extra_id; 
+   ASCF set_extra_desc; 
+   CHEX unk[2];
+   UINT special_enchant_amount; 
+   ASCF special_enchant_desc; 
+}
+
+/*
+
+author's comments:
+
+set_ids = comma seperated list of set item ids 
+set_bonus_desc = description text of what the set will give 
+set_extra_id = id of extra piece of the set (such as shields) 
+set_extra_desc = description text of what u get with the extra item besides the regular bonuses. 
+unk[0] = no clue, always 0, 1 byte 
+unk[1] = no clue, always 0, 1 byte 
+special_enchant_amount = the number of enchants on an item before a special enchant bonus occurs 
+special_enchant_desc = description text of what the special enchant bonus gives.
+
+*/

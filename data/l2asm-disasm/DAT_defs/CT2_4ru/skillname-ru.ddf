@@ -1,0 +1,15 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT id;
+	UINT level;
+	ASCF name;
+	ASCF description;
+	ASCF desc_add1;
+	ASCF desc_add2;
+}

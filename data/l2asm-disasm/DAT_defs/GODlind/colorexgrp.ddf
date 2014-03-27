@@ -1,0 +1,19 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t"; 
+HEADER = 1; 
+RECCNT = -1; 
+MTXCNT_OUT = 1; 
+MATCNT_OUT = 1; 
+ORD_IGNORE = 0; 
+{ 
+   UINT id;
+   INT popup;
+   UINT colorExName_id;
+   HEX UNK_1;
+   INT popup2[3];
+   HEX UNK_2;
+   UINT UNK_3[2];
+   UINT id2;
+   UINT UNK_4[2];
+   HEX UNK_5;
+}

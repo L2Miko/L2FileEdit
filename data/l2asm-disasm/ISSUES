@@ -1,0 +1,5 @@
+- helmet* / hair* ddf stuff is still missing / crazy in pre-CT1.
+  In CT1 they are no longer used
+- questname-e seems to be still bugged in about 7 rows.
+  L2disasm detects NaNs now and handles them with grace. Back-encoded file will be identical since 1.11
+  There's probably something I don't see in the dat file though. Caveat.

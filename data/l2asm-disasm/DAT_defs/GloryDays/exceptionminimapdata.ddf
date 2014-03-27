@@ -1,0 +1,16 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+ORD_IGNORE = NO;
+
+{
+	UINT Nume;
+	ASCF UNK_STR;
+	INT UNK_INT[9];
+}
+
+
+//by Sakaszli, 26-10-2012

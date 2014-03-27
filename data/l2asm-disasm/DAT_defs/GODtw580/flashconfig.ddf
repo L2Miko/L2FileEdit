@@ -1,0 +1,14 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t";
+RECCNT = 1;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+ORD_IGNORE = NO;
+
+{
+	UCHAR cnt;
+	UCHAR unk;
+	ASCF list[cnt];
+	ASCF list2[cnt];
+}

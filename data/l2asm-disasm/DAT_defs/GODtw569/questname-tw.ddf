@@ -1,0 +1,84 @@
+// Lindvior (12.04.2013). Editors: Anonymous, Hint.
+
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{ 
+  UINT tag_?; 
+  UINT quest_id;
+  INT quest_prog; 
+  ASCF main_name; 
+  ASCF prog_name; 
+  ASCF description; 
+  CNTR item_id_cnt;
+  INT item_id[item_id_cnt];
+  CNTR item_unk_cnt;
+  INT item_unk[item_unk_cnt]; // ? (0 or 1)
+  CNTR item_count_cnt;
+  INT item_count[item_count_cnt];
+  FLOAT quest_x;
+  FLOAT quest_y;
+  FLOAT quest_z;
+  UCHAR quest_pos_cnt;
+  FLOAT quest_x_1; ENBBY = [(quest_pos_cnt:1,1)]; ENBBY = [(quest_pos_cnt:2,2)]; ENBBY = [(quest_pos_cnt:4,4)]; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_y_1; ENBBY = [(quest_pos_cnt:1,1)]; ENBBY = [(quest_pos_cnt:2,2)]; ENBBY = [(quest_pos_cnt:4,4)]; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_z_1; ENBBY = [(quest_pos_cnt:1,1)]; ENBBY = [(quest_pos_cnt:2,2)]; ENBBY = [(quest_pos_cnt:4,4)]; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_x_2; ENBBY = [(quest_pos_cnt:2,2)]; ENBBY = [(quest_pos_cnt:4,4)]; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_y_2; ENBBY = [(quest_pos_cnt:2,2)]; ENBBY = [(quest_pos_cnt:4,4)]; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_z_2; ENBBY = [(quest_pos_cnt:2,2)]; ENBBY = [(quest_pos_cnt:4,4)]; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_x_3; ENBBY = [(quest_pos_cnt,3)]; ENBBY = [(quest_pos_cnt:4,4)]; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_y_3; ENBBY = [(quest_pos_cnt,3)]; ENBBY = [(quest_pos_cnt:4,4)]; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_z_3; ENBBY = [(quest_pos_cnt,3)]; ENBBY = [(quest_pos_cnt:4,4)]; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_x_4; ENBBY = [(quest_pos_cnt:4,4)]; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_y_4; ENBBY = [(quest_pos_cnt:4,4)]; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_z_4; ENBBY = [(quest_pos_cnt:4,4)]; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_x_5; ENBBY = [(quest_pos_cnt,5)]; ENBBY = [(quest_pos_cnt,6)]; ENBBY = [(quest_pos_cnt,7)]; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_y_5; ENBBY = [(quest_pos_cnt,5)]; ENBBY = [(quest_pos_cnt,6)]; ENBBY = [(quest_pos_cnt,7)]; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_z_5; ENBBY = [(quest_pos_cnt,5)]; ENBBY = [(quest_pos_cnt,6)]; ENBBY = [(quest_pos_cnt,7)]; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_x_6; ENBBY = [(quest_pos_cnt,6)]; ENBBY = [(quest_pos_cnt,7)]; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_y_6; ENBBY = [(quest_pos_cnt,6)]; ENBBY = [(quest_pos_cnt,7)]; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_z_6; ENBBY = [(quest_pos_cnt,6)]; ENBBY = [(quest_pos_cnt,7)]; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_x_7; ENBBY = [(quest_pos_cnt,7)]; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_y_7; ENBBY = [(quest_pos_cnt,7)]; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_z_7; ENBBY = [(quest_pos_cnt,7)]; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_x_8; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_y_8; ENBBY = [(quest_pos_cnt:8,8)];
+  FLOAT quest_z_8; ENBBY = [(quest_pos_cnt:8,8)];
+  INT UNK_VAL[quest_pos_cnt];
+  UCHAR UNK_2;
+  UINT lvl_min;
+  UINT lvl_max;
+  UINT quest_type;        
+  ASCF entity_name;
+  UINT get_item_in_quest;
+  UINT UNK_3; // 1 = same tab stack, 0 = end of stack (ex: |11110|10| if ur in the 2nd stack id 6 or 7 in quest prog |12345|67| the displayed stack would be |167| in the display) 
+  UINT UNK_4;
+  CNTR contact_npc_cnt;      
+  UINT contact_npc[contact_npc_cnt];
+  FLOAT contact_npc_x;
+  FLOAT contact_npc_y;
+  FLOAT contact_npc_z;
+  ASCF restricions;
+  ASCF short_description; 
+  UCHAR req_class_cnt; // race restriction count 
+  UCHAR UNK_6; // id of class that can do quest 
+    ENBBY = [(req_class_cnt:64,64)];
+  INT req_class[req_class_cnt]; // id of class that can do quest 
+  CNTR req_item_cnt;
+  INT req_item[req_item_cnt]; // id of items needed to do quest 
+  UINT clan_pet_quest;
+  UINT req_quest_complete; // id of quest that must be completed first 
+  UINT UNK_7;
+  UINT area_id;
+  UINT UNK_8;
+  CNTR reward_id_cnt;
+  INT reward_id[reward_id_cnt];
+  CNTR reward_count_cnt;
+  INT reward_count[reward_count_cnt];
+  CNTR parent_step_cnt;
+  INT parent_step[parent_step_cnt];
+}

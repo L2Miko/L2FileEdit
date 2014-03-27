@@ -1,0 +1,123 @@
+--------------
+  CT1+ notes
+--------------
+
+You will have to use loaderCT1.exe to succesfully load L2.exe
+Check the bottom for some info.
+
+Patcher.exe will not attempt to mangle l2.exe by default for now.
+
+Overally:
+
+later C2 : use loader
+C3 - Interlude : use patcher -n
+CT1+ : use loaderCT1
+
+Thanks to e673 for reminding me about simplicity :)
+
+--------------
+   L2encdec
+--------------
+
+Algorithms supported in both directions:
+
+	111, 120, 121, 211, 212
+	411 - 414 (using new private/public pairs)
+
+Decoding only:
+
+	411 - 414 (using L2's original keys)
+
+USAGE: Please start l2encdec and read the explanation.
+
+
+
+l2encdec.exe <command> <source file> [destination file]
+
+-l/-g		: decrypts original L2 files
+-d/-s		: decrypts files encrypted with "new" RSA pairs
+
+-e/-h <met>	: encrypts file with chosen method. You must provide one
+		  of the following: 111, 120, 121, 211, 212, 411, 412, 413, 414
+-t         	: ignore tail (i.e. Exteel files have no tail)
+
+Optional commands:
+
+-r <rsa>	: chooses different rsa key pair. 0 is l2encdec's default
+		  1 is used for decrypting L2J-VN files. You don't have
+		  to provide this command, unless you need a pair
+		  other than #0
+
+Source file is mandatory (duh!). Destination file, if not given, will be 
+automatically generated (with enc- or dec- prefix). Those prefixes are 
+not taken into account, when 121 key is being generated.
+
+l2encdec uses:
+
+- GNU GMP http://www.swox.com/gmp/
+- zlib http://www.gzip.org/zlib/
+
+-------------
+   patcher
+-------------
+
+*** It's always a good idea to backup your whole L2 system subdir. ***
+
+USAGE: patcher.exe [option]
+
+-n		: attempt to modify exe file
+-x <name>	: specify exe file to change (defaults to l2.exe)
+-t		: skip tail in processed files
+-h		: prints help page
+-f		: enables "force" mode - l2encdec errors will be ignored
+		  (useful if you have only a part of the files patched)
+
+Generally - patcher is responsible for reencrypting all "protected"
+files. It can also take care of main exe's keys. Thanks to -t and -x
+flags, you can use patcher to modify other games, i.e. Exteel.
+
+With L2.exe - it depends on chronicle (later C2, CT1) and GG. With some versions L2.exe 
+is packed/protected somehow, with others - not. That's where -n option
+come into equation. If you WANT patcher to substitute 41x keys in l2.exe,
+start it with -n option. Otherwise you will have to to use loader or loaderCT1.
+
+Details:
+
+1) Copy patcher and l2encdec into lineage2's system subdir
+2) Make sure backup dir doesn't exist
+3) Start command line prompt, or use something that will keep it 
+   (like FAR, etc.)
+4) Start patcher, eventually providing required options
+
+Patcher will:
+
+1) make backup subdir under lineage2's system subdir
+   (or abort if it's impossible or backup subdir already exists).
+
+2) scan every file in L2's system subdir. If a file with 41x header is found 
+   AND it doesn't start with enc- or dec-, then backup copy will be created
+   (under backup dir), and an original file will be reencrypted using the
+   new key.
+
+If -n option is used, it will attempt to mangle l2.exe (use with C3 - Interlude).
+
+-------------
+   loader
+-------------
+
+It takes care of rsa key after spawning L2. Copy to l2's system subdir along 
+with gg-bps.dll. If patcher succesfully patched L2.exe, loader is not needed.
+
+Run loader with -h option to learn about its options. They are simple.
+
+Loader works only on NT line of systems.
+Sorry 9x users :(
+
+-------------
+  loaderCT1
+-------------
+
+As above, but only for CT1. NC indeed invented, or rather used, next idioticy.
+Thus - loaderCT1. Run with -h to learn the options, although the defaults
+should be sane. Delay controlled with -n is the one you would normally be
+interested in.

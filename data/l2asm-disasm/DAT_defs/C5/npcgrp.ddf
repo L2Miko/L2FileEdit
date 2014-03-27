@@ -1,0 +1,47 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT tag;
+	UNICODE class;
+	UNICODE mesh;
+	UINT cnt_tex1;
+	UNICODE tex1[cnt_tex1];
+	UINT cnt_tex2;
+	UNICODE tex1[cnt_tex2];
+	CNTR cnt_dtab1;
+	UINT dtab1[cnt_dtab1];
+	FLOAT npc_speed;
+//	UINT UNK_0;
+	UINT unk0_cnt;
+	UNICODE unk0_tab[unk0_cnt];
+	UINT cnt_snd1;
+	UNICODE snd1[cnt_snd1];
+	UINT cnt_snd2;
+	UNICODE snd2[cnt_snd2];
+	UINT cnt_snd3;
+	UNICODE snd3[cnt_snd3];
+//	UINT UNK_1;
+	CNTR unk1_cnt;
+	UINT unk1_tab[unk1_cnt];
+//	UINT level_lim_dn;
+//	UINT level_lim_up;
+	UNICODE effect;
+	UINT UNK_2;
+	FLOAT sound_rad;
+	FLOAT sound_vol;
+	FLOAT sound_rnd;
+	UINT quest_be;
+	UINT class_lim_?;
+}
+
+/*
+	npcgrp from c5 seems to be more simple than c4's one
+	wtf
+
+	that unk_0 is just a gamble - counter or value is always 0 
+*/

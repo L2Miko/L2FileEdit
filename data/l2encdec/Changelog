@@ -1,0 +1,126 @@
+24-05-10
+
+- rebuilt with fresh toolchain
+  should fix some problems some people were reporting
+
+20-09-09
+
+- fixed Changelog, lol
+
+19-09-09
+
+- change in versioning (major.minor.no-functional-changes)
+- loaderCT1++ will try bin file first
+
+22-06-08
+
+- version upped to 2.92
+- loaderCT1 renamed to loaderCT1
+- adjusted timeouts and verbosity in loaderCT1
+- changed verbosity in patcher
+- recompiled, now depends on libgmp.dll
+
+24-01-07
+
+- version upped to 2.91
+- fixed bug in patcher (core.dll was modified instead
+  of l2.exe)
+
+28-12-07
+
+- added loader for CT1
+- version upped to 2.90
+- patcher doesn't mangle l2.exe by default for now
+
+18-03-07
+
+- added support for 414
+- added -t flag to l2encdec
+- added -t / -x flags to patcher
+- 2.81: tiny bug in patcher fixed
+
+12-07-06
+
+- tiny doc fix, no code changes
+
+27-05-06
+
+- fixed small bug in handling names with spaces
+- missing dll, lol (not much of a use these days
+  though)
+
+11-02-06
+
+- !!! changed command line options !!!
+- added ability to handle other 41x files,
+  at this moment - L2J-VN 41x decrypting, 
+  check out -r <rsa> option
+- removed decrypting/encrypting with 
+  preserving header (was half useless anyway)
+- revised USAGE
+- added baby-guide.html
+
+29-10-05
+
+- -g/-l flag handles pre 4xx files properly now
+
+16-08-05
+
+- Updated to handle 413
+
+09-08-05
+
+- patcher's -e is removed (as it's the default action)
+- minor changes to USAGE
+- version upped to 2.55
+- fixed dates in this file (damn... xD)
+
+19-04-05
+
+- patcher assumes -e, if -n is not given
+
+16-04-05
+
+- new options in patcher (read USAGE)
+
+19-03-05
+
+- fixed CRC calculation
+- fixed tiny error in dll :/
+
+06-03-05
+
+- korean's C3 412 supported
+- loaders 1 & 2 are not included anymore
+
+18-02-05
+
+- new, better version of loader
+
+15-02-05
+
+- patcher's -h and -f options added
+- two loaders are available now
+
+14-02-05
+
+- GG "bypassed", not in a very pretty way (at least now), but it works
+- change: patcher doesn't touch exe/dll files
+- added: loader
+
+26-01-05
+
+- another thingy in patcher fixed
+
+18-01-05
+
+l2encdec:
+
+- fixed crash on broken rsa streams
+- fixed few typos
+- new action: -g
+
+patcher:
+
+- more intelligent now, "looping" shouldn't happen anymore
+- fix for potential crash in "looping" (and more sanity checks)

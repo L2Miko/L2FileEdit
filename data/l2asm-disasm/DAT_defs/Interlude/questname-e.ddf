@@ -1,0 +1,50 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{ 
+   UINT tag_?; 
+   UINT quest_id; 
+   UINT quest_prog; 
+   ASCF main_name; 
+   ASCF prog_name; 
+   ASCF description; 
+   CNTR cnt1;            //num of items to get 
+   INT items[cnt1];         //list of items to get by item_id 
+   CNTR cnt2;            //count of the items from cnt1 (should be same as cnt1) 
+   INT num_items[cnt2];      //num of each coressponding item (0 = infinity) 
+
+   FLOAT quest_x;         //x coord of current "pin" on map 
+   FLOAT quest_y;         //y coord of current "pin" on map 
+   FLOAT quest_z;         //z coord of current "pin" on map 
+
+   UINT lvl_min;         //lvl req to start quest 
+   UINT lvl_max;         //recommended lvl max 
+   UINT quest_type;         //0 = quests that lead to rewards (varka, summoning rb, coin quest, etc), 1 = quests that lead to special items (lures, wedding dress), 2 = repeatable, 3 = one time 
+
+/*
+	questname-e seems a lil bugged with 6 above values in ~7 rows
+*/
+
+   ASCF entity_name;         // 
+   UINT get_item_in_quest;      //1 = get item in quest part, 0 = no item obtained in quest 
+   UINT UNK_1;            //1 = same tab stack, 0 = end of stack (ex: |11110|10| if ur in the 2nd stack id 6 or 7 in quest prog |12345|67| the displayed stack would be |167| in the display) 
+   UINT UNK_2;            //no clue 
+   UINT contact_npc_id;      //who starts the quest 
+   FLOAT contact_npc_x;      //start quest x_loc 
+   FLOAT contact_npc_y;      //start quest x_loc 
+   FLOAT contact_npc_z;      //start quest x_loc 
+   ASCF restricions;         //can be race or quest pre-reqs 
+   ASCF short_description; 
+   CNTR cnt3;            //race restriction count 
+   INT req_class[cnt3];      //id of class that can do quest 
+   CNTR cnt4;            //item quest restriction start count 
+   INT req_item[cnt4];      //id of items needed to do quest 
+   UINT clan_pet_quest;      //0 = reg quest, 1 = pet/clan quest 
+   UINT req_quest_complete;   //id of quest that must be completed first 
+   UINT UNK_3;            //unknown all 0 
+   UINT area_id;         //area id (goddard, rune, giran, etc) 
+}

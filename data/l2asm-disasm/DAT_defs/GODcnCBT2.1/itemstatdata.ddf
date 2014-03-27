@@ -1,0 +1,28 @@
+//early version submitted by Allen (L2Sexi Server)
+
+FS = "\t"; 
+HEADER = 1; 
+RECCNT = OFF; 
+MTXCNT_OUT = 1; 
+MATCNT_OUT = 1; 
+ORD_IGNORE = 0; 
+
+{ 
+	UINT ID;
+	FLOAT pdef;
+	FLOAT mdef;
+	FLOAT patt;
+	FLOAT matt;
+	FLOAT UNK_1;
+	FLOAT speed;
+	FLOAT avoid_mod;
+	FLOAT UNK_2;
+	FLOAT critical;
+	FLOAT UNK_3;
+	FLOAT UNK_4;
+	FLOAT shield_pdef;
+	FLOAT shield_rate;
+	FLOAT hit_mod;	
+	FLOAT UNK_5;
+	HEX UNK_6;
+}
