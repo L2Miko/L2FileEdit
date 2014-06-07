@@ -1,7 +1,7 @@
-//early version submitted by Allen (L2Sexi Server)
+// Tauti (06.07.2012). Editors: Anonymous, Allen (L2Sexi), Hint.
 FS = "\t";
 HEADER = 1;
-RECCNT = -1;
+RECCNT = OFF;
 MTXCNT_OUT = 1;
 MATCNT_OUT = 1;
 ORD_IGNORE = 0;
@@ -31,7 +31,7 @@ ORD_IGNORE = 0;
 	UINT UNK_2_cnt;
 	UINT UNK_2_tab[UNK_2_cnt];
 	UINT UNK_3[3];
-	UNICODE timetab[2];
+	UNICODE timetab_0; // Added in GoD:Stranger Korean Client...Syncia
 	ASCF drop_sound;
 	UINT UNK_4;
 	UINT body_part;
@@ -55,23 +55,37 @@ ORD_IGNORE = 0;
 	UINT curvature;
 	UINT UNK_5;
 	INT is_hero;
-	INT UNK_6;
-	FLOAT UNK_7;
+	UINT UNK_6; // Data type changed to INT in GoD:Stranger Korean Client...Syncia
+	FLOAT Unknown_float[2]; // Added in GoD:Stranger Korean Client...Syncia
+    INT UNK_7;
 	UINT freaky_cnt; // almost always equal to wpn_mesh_cnt
-	UNICODE effA;
-	UNICODE effB;
-		ENBBY = [(freaky_cnt,2)];
+
+// Eff_A and B are removed in this chronicle. 2014/04/27
+
 	FLOAT junk1A[5];
+		ENBBY = [(freaky_cnt:-1,1)];
+		ENBBY = [(freaky_cnt,2)];
 	FLOAT junk1B[5];
 		ENBBY = [(freaky_cnt,2)];
+
 	UNICODE rangeA;
+		ENBBY = [(freaky_cnt:-1,1)];
+		ENBBY = [(freaky_cnt,2)];
 	UNICODE rangeB;
 		ENBBY = [(freaky_cnt,2)];
+
 	FLOAT junk2A[6];
+		ENBBY = [(freaky_cnt:-1,1)];
+		ENBBY = [(freaky_cnt,2)];
 	FLOAT junk2B[6];
 		ENBBY = [(freaky_cnt,2)];
+
 	FLOAT junk3A[10];
+		ENBBY = [(freaky_cnt:-1,1)];
+		ENBBY = [(freaky_cnt,2)];
 	FLOAT junk3B[10];
 		ENBBY = [(freaky_cnt,2)];
 	INT junk3[10];
 }
+
+/* you might need adjusting ENBBY options */

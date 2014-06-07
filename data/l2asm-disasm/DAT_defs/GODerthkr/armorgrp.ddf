@@ -1,7 +1,7 @@
 //early version submitted by Allen (L2Sexi Server)
 FS = "\t";
 HEADER = 1;
-RECCNT = -1;
+RECCNT = OFF;
 MTXCNT_OUT = 1;
 MATCNT_OUT = 1;
 ORD_IGNORE = YES;
@@ -29,12 +29,14 @@ ORD_IGNORE = YES;
 	UINT crystallizable;
 	HEX UNK_3;
 	UINT UNK_4_cnt;
-	UINT UNK_4_tab[UNK_4_cnt];
-	UINT UNK_5[3];
-	UNICODE timetab[2];
-	ASCF drop_sound;
-	UINT UNK_6;
-	UINT body_part;
+	UINT UNK_5;         //It not a counter any more in Dimension Stranger, modified by Syncia in 2014/04/18
+	UINT UNK_5_tab[2];
+	UNICODE UNK_item;   //It's just a speculation because I don't know the data type here, added by Syncia in 2014/04/18
+        ENBBY = [(UNK_4_cnt,1)];
+	UNICODE Icon_panel; // It seems to appear in Dimension Stranger, added by Syncia in 2014/04/18
+	ASCF complete_drop_sound; // It seems to appear in Epeisodion, added by Syncia in 2013/11/23
+    UINT Unknown_item1; // It seems to appear in Epeisodion, added by Syncia in 2013/11/23
+    UINT Unknown_item2; // It seems to appear in Epeisodion, added by Syncia in 2013/11/23
 
 	MTX m_HumnFigh;
 	MTX3 m_HumnFigh_add;
@@ -75,23 +77,25 @@ ORD_IGNORE = YES;
 	MTX3 m_Kamael_add;
 	MTX f_Kamael;
 	MTX3 f_Kamael_add;
-	
-	MTX m_Ertheia;
-	MTX3 m_Ertheia_add;
-	MTX f_Ertheia;
-	MTX3 f_Ertheia_add;
-	
+
 	MTX NPC;
 	MTX3 NPC_add;
+
+	MTX f_Ertheia;
+	MTX3 f_Ertheia_add;
+	MTX m_Ertheia;
+	MTX3 m_Ertheia_add;
+
 	UNICODE att_eff;
 	UINT item_sound_cnt;
 	UNICODE item_sound[item_sound_cnt];
 	UNICODE drop_sound;
 	UNICODE equip_sound;
+	UINT UNK_6;
 	UINT UNK_7;
-	UINT UNK_8;
 	UINT armor_type;
 	UINT crystal_type;
 	UINT avoid_mod;
-	INT UNK_9[4];
+	UINT UNK_8[3];
+	INT Reserved_item0; // It seems to appear in Epeisodion, added by Syncia in 2013/11/23
 }                

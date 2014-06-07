@@ -6,8 +6,8 @@ MATCNT_OUT = YES;
 ORD_IGNORE = NO;
 
 {
-	INT x;
-	INT y;
-	INT z;
-	INT yaw;
+	FLOAT x;
+	FLOAT y;
+	FLOAT z;
+	FLOAT yaw;
 }

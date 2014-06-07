@@ -1,22 +1,25 @@
-FS = "\t";
-RECCNT = -1;
-HEADER = 1;
-MTXCNT_OUT = YES;
-MATCNT_OUT = YES;
-ORD_IGNORE = NO;
+//Goddess of Destruction Epeisodion Client use, created by syncia.
 
-{
-	UINT list_1;
-	UINT skill_id;
-	UINT skill_maxlvl;
-	UINT list_2;
-	UINT list_3;
-	UINT char_lvl;
-	UINT skill2_id;
-	UINT skill2_maxlvl;
-	UINT list_4;
-	ASCF name;
-	ASCF icons[2];
-	UCHAR cnt;
-	ASCF info[cnt];
+FS = "\t"; 
+HEADER = 1; 
+RECCNT = OFF; 
+MTXCNT_OUT = 1; 
+MATCNT_OUT = 1; 
+ORD_IGNORE = 0; 
+
+{ 
+	UINT Skill_Group;
+	UINT Skill_ID;
+	UINT Skill_MaxLV;
+	UINT Skill_Row_Line;
+	UINT Skill_Column_Line;
+	UINT Skill_LearnLV;
+	UINT UNK_1;
+	UINT UNK_2;
+	UINT Skill_Unlock_Point;
+	ASCF Skill_Name;
+	ASCF Skill_Icon;
+	ASCF Skill_Type;
+	UCHAR count;
+	ASCF Skill_Description_Level[count];
 }

@@ -8,9 +8,11 @@ ORD_IGNORE = 0;
 { 
    UINT id;
    UNICODE name; 
-   UNICODE add_name; 
+   ASCF add_name; //Data structure changed to ASCF 2014/02/23
    ASCF description; 
    INT popup;
-   INT SetItemGrp_id;
-   INT unk;
+   INT unk_3; //Modified by Syncia, but I'm not pretty sure its data type.
+   INT unk4;
+   UNICODE Card;
+   UINT unk_5[7];
 }

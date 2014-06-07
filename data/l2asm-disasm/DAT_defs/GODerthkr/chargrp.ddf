@@ -19,7 +19,7 @@ MAGIC = 0;
 	UINT cnt_ft2;
 	UNICODE face_tex[cnt_ft2];
 	
-	FILLER void_1{680};
+	FILLER void_1{918};
 	
 	UINT cnt_gm;
 	UNICODE glove_mesh[cnt_gm];
@@ -145,6 +145,9 @@ MAGIC = 0;
 	UNICODE voice_snd_reserve8[cntr8];
 	UINT cntr9;
 	UNICODE voice_snd_reserve9[cntr9];
+	UINT cntr10;
+	UNICODE voice_snd_reserve10[cntr10]; 
+  //Last item seemed appearing in Goddess of destruction: Dimension stranger, added by Syncia 2014/02/14
 	
 	UINT final;
 	ASCF name;

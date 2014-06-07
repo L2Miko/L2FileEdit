@@ -8,7 +8,7 @@ MATCNT_OUT = 1;
 ORD_IGNORE = 0;
 
 { 
-   UINT tag_?;
+   UINT tag;
    UINT quest_id;
    INT quest_prog; 
    ASCF main_name; 
@@ -24,39 +24,13 @@ ORD_IGNORE = 0;
    FLOAT quest_y;         //y coord of current "pin" on map 
    FLOAT quest_z;         //z coord of current "pin" on map 
    UCHAR cnt2;
-   FLOAT quest_x_1;ENBBY = [(cnt2:-1,1)];ENBBY = [(cnt2:-2,2)];ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_y_1;ENBBY = [(cnt2:-1,1)];ENBBY = [(cnt2:-2,2)];ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_z_1;ENBBY = [(cnt2:-1,1)];ENBBY = [(cnt2:-2,2)];ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_x_2;ENBBY = [(cnt2:-2,2)];ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_y_2;ENBBY = [(cnt2:-2,2)];ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_z_2;ENBBY = [(cnt2:-2,2)];ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_x_3;ENBBY = [(cnt2:-1,3)];ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_y_3;ENBBY = [(cnt2:-1,3)];ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_z_3;ENBBY = [(cnt2:-1,3)];ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_x_4;ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_y_4;ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_z_4;ENBBY = [(cnt2:-4,4)];ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_x_5;ENBBY = [(cnt2:-1,5)];ENBBY = [(cnt2:-2,6)];ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_y_5;ENBBY = [(cnt2:-1,5)];ENBBY = [(cnt2:-2,6)];ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_z_5;ENBBY = [(cnt2:-1,5)];ENBBY = [(cnt2:-2,6)];ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_x_6;ENBBY = [(cnt2:-2,6)];ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_y_6;ENBBY = [(cnt2:-2,6)];ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_z_6;ENBBY = [(cnt2:-2,6)];ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_x_7;ENBBY = [(cnt2:-1,7)];ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_y_7;ENBBY = [(cnt2:-1,7)];ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_z_7;ENBBY = [(cnt2:-1,7)];ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_x_8;ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_y_8;ENBBY = [(cnt2:-8,8)];
-   FLOAT quest_z_8;ENBBY = [(cnt2:-8,8)];
-   //FLOAT quest_x_9;ENBBY = [(cnt2:-1,9)];ENBBY = [(cnt2:-6,10)];ENBBY = [(cnt2:-4,12)];
-   //FLOAT quest_y_9;ENBBY = [(cnt2:-1,9)];ENBBY = [(cnt2:-6,10)];ENBBY = [(cnt2:-4,12)];
-   //FLOAT quest_z_9;ENBBY = [(cnt2:-1,9)];ENBBY = [(cnt2:-6,10)];ENBBY = [(cnt2:-4,12)];
-   //FLOAT quest_x_10;ENBBY = [(cnt2:-6,10)];ENBBY = [(cnt2:-4,12)];
-   //FLOAT quest_y_10;ENBBY = [(cnt2:-6,10)];ENBBY = [(cnt2:-4,12)];
-   //FLOAT quest_z_10;ENBBY = [(cnt2:-6,10)];ENBBY = [(cnt2:-4,12)];  
- 
-   INT UNK_VAL[cnt2];
+   FLOAT quest_x_1[cnt2];   
+   FLOAT quest_y_1[cnt2];
+   FLOAT quest_z_1[cnt2];
+
    UCHAR UNK_2;
+   INT UNK_VAL[UNK_2];
+
    UINT lvl_min;         //lvl req to start quest 
    UINT lvl_max;         //recommended lvl max 
    UINT quest_type;         //0 = quests that lead to rewards (varka, summoning rb, coin quest, etc), 1 = quests that lead to special items (lures, wedding dress), 2 = repeatable, 3 = one time 
@@ -73,8 +47,11 @@ ORD_IGNORE = 0;
    ASCF short_description; 
    UCHAR cnt3;      //race restriction count 
    UCHAR UNK_6;      //id of class that can do quest 
-		ENBBY = [(cnt3:64,64)];
-   INT req_class[cnt3];      //id of class that can do quest 
+      ENBBY = [(cnt3:64,64)];
+   INT req_class[cnt3];      //id of class that can do quest
+      UINT req_class_2[64];   
+        ENBBY = [(cnt3:64,64),(UNK_6,2)]; 
+
    CNTR cnt4;            //item quest restriction start count 
    INT req_item[cnt4];      //id of items needed to do quest 
    UINT clan_pet_quest;      //0 = reg quest, 1 = pet/clan quest 

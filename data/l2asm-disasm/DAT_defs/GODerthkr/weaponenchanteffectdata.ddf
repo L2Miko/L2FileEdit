@@ -10,10 +10,10 @@ ORD_IGNORE = NO;
 	FILLER tag{3};
 	CHEX id;
 	ASCF type;
-	UINT effect_CNT;
-	ASCF effect[effect_CNT];
-	INT X;
-	UINT EnchantMeshShow;
+	UINT CNT_0; //Added in GoD:Stranger Korean Client...Syncia
+	ASCF effect[CNT_0];
+	UINT UNK_Item_0; //Added in GoD:Stranger Korean Client...Syncia
+	UINT EnchantMeshShow_1;
 	UCHAR R1_ench1;
 	UCHAR G1_ench1;
 	UWORD B1_ench1;
@@ -156,12 +156,14 @@ ORD_IGNORE = NO;
 	FLOAT Opacity_ench20;
 	UINT EnchantEffectShow;
 	FLOAT num_ench[20];
-	UINT effect_CNT2;
-	ASCF effect2[effect_CNT2];
-	INT unk_1[2];
-	UINT effect_CNT3;
-	ASCF effect3[effect_CNT3];
-	INT unk_2[2];
+	UINT CNT_1; //Added in GoD:Stranger Korean Client...Syncia
+	ASCF effect2[CNT_1];
+	UINT UNK_Item_1; //Added in GoD:Stranger Korean Client...Syncia
+	INT unk_1;
+	UINT CNT_2; //Added in GoD:Stranger Korean Client...Syncia
+	ASCF effect3[CNT_2];
+	UINT UNK_Item_2; //Added in GoD:Stranger Korean Client...Syncia
+	INT unk_2;
 	UCHAR R1_ench1;
 	UCHAR G1_ench1;
 	UWORD B1_ench1;

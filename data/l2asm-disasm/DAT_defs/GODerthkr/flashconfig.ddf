@@ -8,5 +8,6 @@ ORD_IGNORE = NO;
 
 {
 	UCHAR coint;
-	ASCF list[58];
+	UCHAR Unknown;
+	ASCF list[87];
 }

@@ -7,6 +7,6 @@ MATCNT_OUT = YES;
 ORD_IGNORE = NO;
 
 {
-	UINT Race[9];
-	ASCF name;
+	UINT Item;
+	UINT Item_Code[2];
 }

@@ -9,7 +9,9 @@ ORD_IGNORE = YES;
 	UINT tag;
 	HEX extra;
 	UNICODE name;
-	FLOAT floats[119];
+	FLOAT floats[54]; //Modified in GoD: Stranger Korean Client..Syncia
+	INT Integer[59];   //Modified in GoD: Stranger Korean Client..Syncia
+	FLOAT floats[20]; //Modified in GoD: Stranger Korean Client..Syncia
 }
 
 /*
