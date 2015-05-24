@@ -1,0 +1,15 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT npc_id;
+	UINT skill_id;
+	UNICODE seq_name;
+	ASCF skill_name;
+	ASCF npc_name;
+	ASCF npc_class;
+}

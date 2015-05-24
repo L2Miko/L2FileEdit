@@ -1,0 +1,43 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+ORD_IGNORE = NO;
+
+{
+	UINT tab;
+	ASCF desc;
+	UINT lv;
+	ASCF desc2;
+	ASCF desc3;
+	UINT cnt0;
+	CHAR Unk[2];
+	UINT cnt1;
+	UINT val1;
+		ENBBY = [(cnt0:-1,1)];ENBBY = [(cnt0:-2,2)];
+	ASCF desc4;
+		ENBBY = [(cnt1:-1,1)];ENBBY = [(cnt1:-2,2)];
+	UINT val2;
+		ENBBY = [(cnt0:-2,2)];
+	ASCF desc5;
+		ENBBY = [(cnt1:-2,2)];
+	UINT val3;
+		ENBBY = [(cnt0,3)];
+	ASCF desc6;
+		ENBBY = [(cnt1,3)];
+	UINT cnt3;
+	INT unk1[3];
+		ENBBY = [(cnt3:-1,1)];ENBBY = [(cnt3:-2,2)];ENBBY = [(cnt3:-4,4)];
+	INT unk2[3];
+		ENBBY = [(cnt3:-2,2)];ENBBY = [(cnt3:-4,4)];
+	INT unk3[3];
+		ENBBY = [(cnt3:-1,3)];ENBBY = [(cnt3:-4,4)];
+	INT unk4[3];
+		ENBBY = [(cnt3:-4,4)];
+	INT unk5[3];
+		ENBBY = [(cnt3:-1,5)];ENBBY = [(cnt3:-2,6)];
+	INT unk6[3];
+		ENBBY = [(cnt3:-1,6)];
+}

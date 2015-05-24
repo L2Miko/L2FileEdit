@@ -1,0 +1,15 @@
+FS="\t";
+RECCNT=-1;
+HEADER=YES;
+MTXCNT_OUT=YES;
+MATCNT_OUT=YES;
+MAGIC=0;
+ORD_IGNORE=NO;
+{
+    UINT id; 
+    ASCF Abnormal_Effect;
+    INT UNK_0;
+    ASCF UnknownString_1;
+    UINT UNK_1;
+    FLOAT UnknownFloat[5];
+}

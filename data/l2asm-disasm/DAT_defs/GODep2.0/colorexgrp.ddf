@@ -1,0 +1,24 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t"; 
+HEADER = 1; 
+RECCNT = -1; 
+MTXCNT_OUT = 1; 
+MATCNT_OUT = 1; 
+ORD_IGNORE = 0; 
+{ 
+   UINT ID_Item_0;
+   INT popup;
+   UINT colorExName_id;
+//   CHEX Color_Group_1_RGB[4];
+//   INT UNK_0;
+//   UINT UNK_1;
+   UINT UNK_2;
+//   CHEX Color_Group_2_RGB[4];
+   UINT UNK_3;
+   UINT UNK_4;
+   UINT ID_Item_1;
+   UINT UNK_5;
+   UINT UNK_6;
+   CHEX Color_Group_3_RGB[4];
+//Modified by Syncia for GoD:Dimensional stranger 2014/04/19
+}

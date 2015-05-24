@@ -1,0 +1,20 @@
+//NPCTeleporter.ddf used in GOD:Dimension Stranger, created by Syncia 2014-04-04
+FS="\t";
+RECCNT=-1;
+HEADER=YES;
+MTXCNT_OUT=YES;
+MATCNT_OUT=YES;
+ORD_IGNORE=NO;
+{
+    UINT Item;
+    FLOAT Location_x;
+    FLOAT Location_y;
+    FLOAT Location_z;
+    UINT UNK_0;
+    UCHAR CNT;
+    UINT Unknown_Int[CNT]; 
+       ENBBY = [(CNT:-1,1)];
+       ENBBY = [(CNT:-2,2)];
+       ENBBY = [(CNT:-4,4)];
+       ENBBY = [(CNT:-8,8)];       
+}

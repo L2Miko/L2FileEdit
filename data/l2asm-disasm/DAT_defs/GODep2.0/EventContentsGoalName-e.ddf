@@ -1,0 +1,20 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = -1;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT ID;
+	ASCF Name;
+	ASCF Dest;
+	UINT Unk;
+	ASCF Unk2[2];
+	UINT Unk3;
+	UINT Unk4;
+	ASCF Text;
+	INT Unk5;
+	UINT Uknown_Item[2]; //Added in Goddess of Destruction:Dimensional stranger by Syncia in 2014/02/15
+	UINT UNK6; //Added in Goddess of Destruction:Dimensional stranger by Syncia in 2014/02/15
+}
