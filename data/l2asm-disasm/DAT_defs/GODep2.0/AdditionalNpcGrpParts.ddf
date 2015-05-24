@@ -12,8 +12,9 @@ ORD_IGNORE = NO;
 	UINT Pant_Id;
 	UINT Glove_Id;
 	UINT Shoe_Id;
-	UINT Hair_Accessory_Id;
 	UINT UNK2;
+	UINT Hair_Accessory_Id;
+	UINT UNK3;
 	UINT Weapon_Id;
 	UINT Shield_Id;
 }
