@@ -1,4 +1,4 @@
-//early version submitted by Allen (L2Sexi Server)
+//L2Miko
 FS = "\t";
 RECCNT = 1;
 HEADER = YES;
@@ -9,5 +9,5 @@ ORD_IGNORE = NO;
 {
 	UCHAR coint;
 	UCHAR Unknown;
-	ASCF list[87];
+	ASCF list[150];
 }

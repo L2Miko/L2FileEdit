@@ -1,5 +1,4 @@
-//early version submitted by Allen (L2Sexi Server)
-//Fixed by sakaszli
+//L2Miko
 FS = "\t";
 HEADER = 1;
 RECCNT = -1;
@@ -63,6 +62,7 @@ ORD_IGNORE = 0;
    INT tab5[cnt5];
    CNTR cnt6;
    INT tab6[cnt6];
+   INT tab7[cnt6];
    CNTR cnt7;
-   INT tab7[cnt7];
+   INT tab8[cnt7];
 }

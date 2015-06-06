@@ -227,4 +227,32 @@ UINT Ability_Ratio_2[2];
     ENBBY = [(Ratio_CNT:-4,4)];
 UINT Ability_Ratio_3[2];
     ENBBY = [(Ratio_CNT:-4,4)];	
+
+ASCF Name_18;
+UINT AffectDataType;
+UINT NewSkill_LV;
+UWORD UNK_5;
+
+ASCF Name_19;
+UCHAR New_skill_cnt;
+UINT ID[New_skill_cnt];
+UINT NewSkill_LV_2;
+UWORD UNK_6;
+
+ASCF Name_20;
+UCHAR New_skill_cnt2;
+UINT LV[New_skill_cnt2];
+UINT NewSkill_LV_3;
+UWORD UNK_7;
+
+ASCF Name_21;
+UCHAR Affect_range_cnt2;
+UINT Range[Affect_range_cnt2];
+UINT NewSkill_LV_4;
+UWORD UNK_8;
+
+ASCF Name_22;
+UCHAR Affect_range_cnt3;
+ASCF Affect_range[Affect_range_cnt3];
+
 }
