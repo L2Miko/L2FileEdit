@@ -1,0 +1,14 @@
+FS = "\t";
+RECCNT = 1;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+MAGIC = 0;
+ORD_IGNORE = NO;
+
+{
+	ASCF eula;
+	ASCF fin1;
+	ASCF fin2;
+	ASCF fin3;
+}

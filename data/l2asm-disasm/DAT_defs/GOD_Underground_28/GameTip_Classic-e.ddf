@@ -1,0 +1,15 @@
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+MAGIC = 0;
+ORD_IGNORE = NO;
+
+{
+	UINT id;
+	UINT int1;
+	UINT int2;
+	UINT enable_?;
+	ASCF tip[2];
+}

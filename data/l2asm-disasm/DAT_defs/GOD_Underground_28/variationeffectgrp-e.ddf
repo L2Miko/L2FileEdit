@@ -1,0 +1,17 @@
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+MAGIC = 0;
+ORD_IGNORE = NO;
+
+{
+	UINT int1;
+	UINT int2;
+	UINT int3;
+	UINT int4;
+	UINT int5;
+	UNICODE effect;
+	ASCF attribute;
+}
