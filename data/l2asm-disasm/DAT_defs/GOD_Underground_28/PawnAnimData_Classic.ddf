@@ -1,0 +1,17 @@
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+MAGIC = 0;
+ORD_IGNORE = NO;
+
+{
+	UNICODE character;
+	UNICODE anim_lista[818];
+	UNICODE anim_listb[818];
+	UNICODE anim_listc[818];
+	UNICODE anim_listd[819];
+	FLOAT UNK1[317];
+	UINT UNK2[158];
+}
