@@ -12,5 +12,7 @@ ORD_IGNORE = NO;
 	ASCF str;
 	UNICODE icon;
 	ASCF Desc;
-	INT UNK;
+	WORD UNK;
+	ASCF Desc2;
+	ASCF Desc3;
 }
