@@ -1,3 +1,4 @@
+//early version submitted by Allen (L2Sexi Server)
 FS = "\t";
 RECCNT = OFF;
 HEADER = YES;
@@ -61,8 +62,8 @@ ORD_IGNORE = NO;
 	UNICODE fshaman_sub;
 	UNICODE mkamael_sub;
 	UNICODE fkamael_sub;
-	UNICODE merathia_sub;
-	UNICODE ferathia_sub;
+	UNICODE merathia_sub; //Added in GoD: Stranger Korean Client..Syncia
+	UNICODE ferathia_sub; //Added in GoD: Stranger Korean Client..Syncia
 	UNICODE mfighter_throw;
 	UNICODE ffighter_throw;
 	UNICODE mdarkelf_throw;
@@ -81,8 +82,8 @@ ORD_IGNORE = NO;
 	UNICODE fkamael_throw;
 	UNICODE mextra_throw;
 	UNICODE fextra_throw;
-	UNICODE merathia_throw;
-	UNICODE ferathia_throw;
+	UNICODE merathia_throw; //Added in GoD: Stranger Korean Client..Syncia
+	UNICODE ferathia_throw; //Added in GoD: Stranger Korean Client..Syncia
 	FLOAT sound_vol;
 	FLOAT sound_rad;
 }

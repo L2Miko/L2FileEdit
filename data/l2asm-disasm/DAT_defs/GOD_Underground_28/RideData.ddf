@@ -10,7 +10,11 @@ ORD_IGNORE = YES;
 	UINT tag;
 	HEX extra;
 	UNICODE name;
-	FLOAT floats[54];
-	INT Integer[59];
-	FLOAT floats[20];
+	FLOAT floats[54]; //Modified in GoD: Stranger Korean Client..Syncia
+	INT Integer[59];   //Modified in GoD: Stranger Korean Client..Syncia
+	FLOAT floats[20]; //Modified in GoD: Stranger Korean Client..Syncia
 }
+
+/*
+	There're NaNs here, usually in last two rows
+*/

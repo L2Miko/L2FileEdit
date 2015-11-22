@@ -1,3 +1,4 @@
+//early version submitted by Allen (L2Sexi Server)
 FS = "\t";
 RECCNT = OFF;
 HEADER = YES;
@@ -17,4 +18,5 @@ ORD_IGNORE = NO;
 	UINT UNK_5;
 	UINT UNK_6;
 	CHEX Color_Group_3_RGB[4];
+//Modified by Syncia for GoD:Dimensional stranger 2014/04/19
 }

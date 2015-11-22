@@ -1,3 +1,4 @@
+//L2Miko
 FS = "\t";
 RECCNT = OFF;
 HEADER = YES;
@@ -17,10 +18,10 @@ ORD_IGNORE = NO;
 	UINT UNK_1;
 	FLOAT hit_time[3];
 	INT is_magic;
-	UINT UNK_2[3];
+	UINT UNK_3[3]; // Reduced to 3 items in GoD: Stranger Korean Client...Syncia
 	INT UNK;
-	UINT CNT_0;
-	UNICODE ani_char[CNT_0];
+	UINT CNT_0;  // Counter for next ani_char in GoD: Stranger Korean Client...Syncia
+	UNICODE ani_char[CNT_0]; // Dynamic quantity in GoD: Stranger Korean Client...Syncia
 	UNICODE desc;
 	UNICODE icon_name;
 	UNICODE icon_name2;
@@ -29,6 +30,6 @@ ORD_IGNORE = NO;
 	UINT ench_skill_id;
 	UINT hp_consume;
 	ASCF nonetext1;
-	INT UNK_3[4];
+	INT UNK_4[4];
 	ASCF nonetext2;
 }

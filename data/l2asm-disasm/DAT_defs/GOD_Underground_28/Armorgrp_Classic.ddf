@@ -1,3 +1,4 @@
+//early version submitted by Allen (L2Sexi Server)
 FS = "\t";
 RECCNT = OFF;
 HEADER = YES;
@@ -29,14 +30,15 @@ ORD_IGNORE = YES;
 	UINT crystallizable;
 	HEX UNK_3;
 	UINT UNK_4_cnt;
-	UINT UNK_5;
+	UINT UNK_5;         //It not a counter any more in Dimension Stranger, modified by Syncia in 2014/04/18
 	UINT UNK_5_tab[2];
-	UNICODE UNK_item;
+	UNICODE UNK_item;   //It's just a speculation because I don't know the data type here, added by Syncia in 2014/04/18
 		ENBBY = [(UNK_4_cnt,1)];
-	UNICODE Icon_panel;
-	ASCF complete_drop_sound;
-	UINT Unknown_item1;
-	UINT Unknown_item2;
+	UNICODE Icon_panel; // It seems to appear in Dimension Stranger, added by Syncia in 2014/04/18
+	ASCF complete_drop_sound; // It seems to appear in Epeisodion, added by Syncia in 2013/11/23
+	UINT Unknown_item1; // It seems to appear in Epeisodion, added by Syncia in 2013/11/23
+	UINT Unknown_item2; // It seems to appear in Epeisodion, added by Syncia in 2013/11/23
+
 	MTX m_HumnFigh;
 	MTX3 m_HumnFigh_add;
 	MTX f_HumnFigh;
@@ -96,5 +98,5 @@ ORD_IGNORE = YES;
 	UINT crystal_type;
 	UINT avoid_mod;
 	UINT UNK_8[3];
-	INT Reserved_item0;
+	INT Reserved_item0; // It seems to appear in Epeisodion, added by Syncia in 2013/11/23
 }

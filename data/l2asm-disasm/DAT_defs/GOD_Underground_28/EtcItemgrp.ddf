@@ -1,3 +1,4 @@
+//early version submitted by Allen (L2Sexi Server)
 FS = "\t";
 RECCNT = OFF;
 HEADER = YES;
@@ -31,9 +32,10 @@ ORD_IGNORE = NO;
 	UINT UNK_2_cnt;
 	UINT UNK_2_tab[UNK_2_cnt];
 	UINT UNK_3[3];
-	UNICODE Item_Icon;
-	ASCF ItemDropDescription;
-	UINT UNK_5;
+	UNICODE Item_Icon; //Added in Goddess of Destruction:Dimensional Stranger by syncia 2014/02/15
+	//UNICODE fort; //Removed from Goddess of Destruction:Dimensional Stranger by syncia 2014/04/19
+	ASCF ItemDropDescription; //Added in Goddess of Destruction Epeosodion by Syncia 2013/11/28
+	UINT UNK_5; //Added in Goddess of Destruction Epeosodion by Syncia 2013/11/28
 	MTX mesh_tex_pair;
 	UNICODE item_sound;
 	UNICODE equip_sound;

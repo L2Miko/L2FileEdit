@@ -10,5 +10,5 @@ ORD_IGNORE = NO;
 	UINT server_id;
 	UINT tag;
 	ASCF server_name;
-	ASCF server_desc;
+	ASCF server_desc;	//probably, or just a reserved byte
 }

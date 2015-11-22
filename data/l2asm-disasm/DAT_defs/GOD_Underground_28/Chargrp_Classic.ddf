@@ -1,3 +1,5 @@
+//early version submitted by Allen (L2Sexi Server)
+
 FS = "\t";
 RECCNT = 16;
 HEADER = YES;

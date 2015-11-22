@@ -1,3 +1,4 @@
+//early version submitted by Allen (L2Sexi Server)
 FS = "\t";
 RECCNT = OFF;
 HEADER = YES;
@@ -11,3 +12,4 @@ ORD_IGNORE = NO;
 	ASCF UNK_STR;
 	INT UNK_INT[9];
 }
+//by Sakaszli, 26-10-2012

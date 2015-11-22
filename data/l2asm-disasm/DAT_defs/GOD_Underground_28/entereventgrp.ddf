@@ -8,7 +8,7 @@ ORD_IGNORE = NO;
 
 {
 	UINT id;
-	CHAR UNK_0;
+	CHAR UNK_0;	//may be empty ASCF as well...
 	ASCF skill_sound;
 	FLOAT sound_vol;
 	FLOAT sound_rad;

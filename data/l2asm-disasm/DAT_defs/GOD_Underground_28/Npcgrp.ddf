@@ -1,3 +1,4 @@
+// Tauti (06.07.2012). Editors: Anonymous, Allen (L2Sexi), Hint.
 FS = "\t";
 RECCNT = OFF;
 HEADER = YES;
@@ -25,6 +26,7 @@ ORD_IGNORE = NO;
 	UNICODE snd2[cnt_snd2];
 	CNTR cnt_snd3;
 	UNICODE snd3[cnt_snd3];
+
 	UINT rb_effect_on;
 	UNICODE rb_effect_1;
 		ENBBY = [(rb_effect_on: -1, 1)];
@@ -70,6 +72,7 @@ ORD_IGNORE = NO;
 	UINT unk1_tab[unk1_cnt];
 	CNTR unk2_cnt;
 	UINT unk2_tab[unk2_cnt];
+
 	UNICODE effect;
 	UINT UNK_3;
 	FLOAT sound_rad;
@@ -85,5 +88,5 @@ ORD_IGNORE = NO;
 	ASCF icon;
 	FLOAT UNK2[13];
 	UINT UNK3[5];
-	INT Unknown_int;
+	INT Unknown_int; //One more item added, syncia, 2014/04/24
 }

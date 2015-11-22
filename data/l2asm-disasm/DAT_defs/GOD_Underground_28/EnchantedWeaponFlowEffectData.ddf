@@ -1,3 +1,5 @@
+//Goddess of Destruction Dimension stranger use, created by syncia 2014/04/19
+
 FS = "\t";
 RECCNT = OFF;
 HEADER = YES;
@@ -8,7 +10,8 @@ ORD_IGNORE = NO;
 
 {
 	UINT tag;
-	UINT Item_cnt;
+	UINT Item_cnt;; // This value defines how many items contained in every single data row.
+
     UINT Item_type_0;
         ENBBY = [(Item_cnt:-1,1)];
 		ENBBY = [(Item_cnt:-2,2)];
@@ -34,6 +37,7 @@ ORD_IGNORE = NO;
 		ENBBY = [(Item_cnt:-2,2)];
 		ENBBY = [(Item_cnt:-4,4)];
 		ENBBY = [(Item_cnt:-8,8)];
+
     UINT Item_type_1;
 		ENBBY = [(Item_cnt:-2,2)];
 		ENBBY = [(Item_cnt:-4,4)];
@@ -54,6 +58,7 @@ ORD_IGNORE = NO;
 		ENBBY = [(Item_cnt:-2,2)];
 		ENBBY = [(Item_cnt:-4,4)];
 		ENBBY = [(Item_cnt:-8,8)];
+
     UINT Item_type_2;
 		ENBBY = [(Item_cnt:-1,3)];
 		ENBBY = [(Item_cnt:-4,4)];
@@ -74,6 +79,7 @@ ORD_IGNORE = NO;
 		ENBBY = [(Item_cnt:-1,3)];
 		ENBBY = [(Item_cnt:-4,4)];
 		ENBBY = [(Item_cnt:-8,8)];
+
     UINT Item_type_3;
 		ENBBY = [(Item_cnt:-4,4)];
 		ENBBY = [(Item_cnt:-8,8)];
@@ -89,6 +95,7 @@ ORD_IGNORE = NO;
     UNICODE Enhant_Effect_Envaration_1;
 		ENBBY = [(Item_cnt:-4,4)];
 		ENBBY = [(Item_cnt:-8,8)];
+
     UINT Item_type_4;
 		ENBBY = [(Item_cnt:-1,5)];
 		ENBBY = [(Item_cnt:-2,6)];
@@ -109,6 +116,7 @@ ORD_IGNORE = NO;
 		ENBBY = [(Item_cnt:-1,5)];
 		ENBBY = [(Item_cnt:-2,6)];
 		ENBBY = [(Item_cnt:-8,8)];
+
     UINT Item_type_5;
 		ENBBY = [(Item_cnt:-2,6)];
 		ENBBY = [(Item_cnt:-8,8)];
@@ -124,6 +132,7 @@ ORD_IGNORE = NO;
     UNICODE Enhant_Effect_Envaration_1;
 		ENBBY = [(Item_cnt:-2,6)];
 		ENBBY = [(Item_cnt:-8,8)];
+
     UINT Item_type_6;
 		ENBBY = [(Item_cnt:-1,7)];
 		ENBBY = [(Item_cnt:-8,8)];
@@ -139,6 +148,7 @@ ORD_IGNORE = NO;
     UNICODE Enhant_Effect_Envaration_1;
 		ENBBY = [(Item_cnt:-1,7)];
 		ENBBY = [(Item_cnt:-8,8)];
+
     UINT Item_type_7;
 		ENBBY = [(Item_cnt:-8,8)];
     UNICODE Enhant_Effect_0;

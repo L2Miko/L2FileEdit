@@ -1,3 +1,4 @@
+// Tauti (06.07.2012). Editors: Anonymous, Allen (L2Sexi), Hint.
 FS = "\t";
 RECCNT = OFF;
 HEADER = YES;
@@ -31,7 +32,7 @@ ORD_IGNORE = NO;
 	UINT UNK_2_cnt;
 	UINT UNK_2_tab[UNK_2_cnt];
 	UINT UNK_3[3];
-	UNICODE timetab_0;
+	UNICODE timetab_0; // Added in GoD:Stranger Korean Client...Syncia
 	ASCF drop_sound;
 	UINT UNK_4;
 	UINT body_part;
@@ -55,10 +56,13 @@ ORD_IGNORE = NO;
 	UINT curvature;
 	UINT UNK_5;
 	INT is_hero;
-	UINT UNK_6;
-	FLOAT Unknown_float[2];
+	UINT UNK_6; // Data type changed to INT in GoD:Stranger Korean Client...Syncia
+	FLOAT Unknown_float[2]; // Added in GoD:Stranger Korean Client...Syncia
 	INT UNK_7;
-	UINT freaky_cnt;
+	UINT freaky_cnt; // almost always equal to wpn_mesh_cnt
+
+// Eff_A and B are removed in this chronicle. 2014/04/27
+
 	FLOAT junk1A[5];
 		ENBBY = [(freaky_cnt: -1, 1)];
 		ENBBY = [(freaky_cnt: -1, 2)];
@@ -81,3 +85,5 @@ ORD_IGNORE = NO;
 		ENBBY = [(freaky_cnt: -1, 2)];
 	INT junk3[12];
 }
+
+/* you might need adjusting ENBBY options */

@@ -1,6 +1,6 @@
 FS = "\t";
 RECCNT = 1;
-HEADER = YES;
+HEADER = YES;	//one of rare files with defined counter
 MTXCNT_OUT = YES;
 MATCNT_OUT = YES;
 MAGIC = 0;

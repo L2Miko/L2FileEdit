@@ -1,3 +1,4 @@
+//early version submitted by Allen (L2Sexi Server)
 FS = "\t";
 RECCNT = OFF;
 HEADER = YES;
@@ -10,9 +11,9 @@ ORD_IGNORE = NO;
 	FILLER tag{3};
 	CHEX id;
 	ASCF type;
-	UINT CNT_0;
+	UINT CNT_0; //Added in GoD:Stranger Korean Client...Syncia
 	ASCF effect[CNT_0];
-	UINT UNK_Item_0;
+	UINT UNK_Item_0; //Added in GoD:Stranger Korean Client...Syncia
 	UINT EnchantMeshShow_1;
 	UCHAR R1_ench1;
 	UCHAR G1_ench1;
@@ -156,13 +157,13 @@ ORD_IGNORE = NO;
 	FLOAT Opacity_ench20;
 	UINT EnchantEffectShow;
 	FLOAT num_ench[20];
-	UINT CNT_1;
+	UINT CNT_1; //Added in GoD:Stranger Korean Client...Syncia
 	ASCF effect2[CNT_1];
-	UINT UNK_Item_1;
+	UINT UNK_Item_1; //Added in GoD:Stranger Korean Client...Syncia
 	INT unk_1;
-	UINT CNT_2;
+	UINT CNT_2; //Added in GoD:Stranger Korean Client...Syncia
 	ASCF effect3[CNT_2];
-	UINT UNK_Item_2;
+	UINT UNK_Item_2; //Added in GoD:Stranger Korean Client...Syncia
 	INT unk_2;
 	UCHAR R1_ench1;
 	UCHAR G1_ench1;
