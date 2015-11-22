@@ -66,4 +66,5 @@ ORD_IGNORE = NO;
 	UINT UNK_9[reward_count_cnt];
 	UCHAR parent_step_cnt;
 	INT parent_step[parent_step_cnt];
+	INT UNK_10[3];
 }
