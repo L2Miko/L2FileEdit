@@ -1,0 +1,13 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;	//one of rare files with defined counter
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+MAGIC = 0;
+ORD_IGNORE = NO;
+
+{
+	UINT ID;
+	UNICODE ICON;
+}

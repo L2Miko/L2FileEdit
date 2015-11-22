@@ -1,0 +1,19 @@
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+MAGIC = 0;
+ORD_IGNORE = NO;
+
+{
+	UINT id;
+	UNICODE name;
+	ASCF add_name;
+	ASCF description;
+	INT popup;
+	INT unk_3;
+	INT unk4;
+	UNICODE Card;
+	UINT unk_5[7];
+}
