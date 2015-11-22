@@ -1,0 +1,21 @@
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+MAGIC = 0;
+ORD_IGNORE = NO;
+
+{
+	UINT ID;
+	ASCF FullName;
+	ASCF Dest;
+	WORD Cnt;
+	UINT Unk1;
+	UINT Unk2;
+	UINT ID2;
+	ASCF Name;
+	UINT Unk3;
+	UINT ID3[2];
+	UINT Unk4;
+}
