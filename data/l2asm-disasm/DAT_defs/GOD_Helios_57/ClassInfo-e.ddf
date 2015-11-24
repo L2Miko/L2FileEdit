@@ -8,6 +8,14 @@ MAGIC = 0;
 ORD_IGNORE = NO;
 
 {
-	UINT Race[9];
-	ASCF name;
+	UINT Race;
+	UINT STR;
+ 	UINT DEX;
+	UINT CON;
+	UINT INTE;
+	UINT WIT;
+	UINT MEN;
+	UINT LUC;
+	UINT CHA;
+	ASCF Name;
 }

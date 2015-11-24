@@ -1,3 +1,4 @@
+// by gyo
 FS = "\t";
 RECCNT = 1;
 HEADER = YES;
@@ -9,5 +10,5 @@ ORD_IGNORE = NO;
 {
 	UCHAR coint;
 	UCHAR Unknown;
-	ASCF list[87];
+	ASCF list[160];
 }

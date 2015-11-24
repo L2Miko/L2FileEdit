@@ -9,7 +9,7 @@ ORD_IGNORE = NO;
 {
 	UINT ID;
 	ASCF FullName;
-	ASCF Dest;
+	ASCF Desc;
 	WORD Cnt;
 	UINT Unk1;
 	UINT Unk2;

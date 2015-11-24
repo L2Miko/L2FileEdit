@@ -1,7 +1,7 @@
 //early version submitted by Allen (L2Sexi Server)
 
 FS = "\t";
-RECCNT = 16;
+RECCNT = 19; //Fixed in GoD: Ertheia by rocknow 2014/0513
 HEADER = YES;
 MTXCNT_OUT = YES;
 MATCNT_OUT = YES;
@@ -147,6 +147,7 @@ ORD_IGNORE = NO;
 	UNICODE voice_snd_reserve9[cntr9];
 	UINT cntr10;
 	UNICODE voice_snd_reserve10[cntr10];
+  //Last item seemed appearing in Goddess of destruction: Dimension stranger, added by Syncia 2014/02/14
 
 	UINT final;
 	ASCF name;

@@ -12,14 +12,12 @@ ORD_IGNORE = NO;
 	CHAR EmptyChar;
 		ENBBY = [(IsNextString1, 0)];
 	ASCF String1[IsNextString1];
-		SOFT = 2;
 		ENBBY = [(IsNextString1, 1)];
 		ENBBY = [(IsNextString1, 2)];
 	CHAR IsNextString2;
 		ENBBY = [(IsNextString1, 1)];
 		ENBBY = [(IsNextString1, 2)];
 	ASCF String2[IsNextString2];
-		SOFT = 1;
 		ENBBY = [(IsNextString2, 1), (IsNextString1, 1)];
 		ENBBY = [(IsNextString2, 2), (IsNextString1, 1)];
 		ENBBY = [(IsNextString2, 1), (IsNextString1, 2)];
@@ -48,8 +46,10 @@ ORD_IGNORE = NO;
 		ENBBY = [(IsNextString2, 2), (IsNextString1, 2), (IsNextString3, 1)];
 		ENBBY = [(IsNextString2, 2), (IsNextString1, 2), (IsNextString3, 2)];
 	INT Unknown1[IsNextString3];
-		SOFT = 2;
 	UCHAR Unknown2[2];
 		ENBBY = [(IsNextString3, 1)];
 		ENBBY = [(IsNextString3, 2)];
 }
+
+
+//by Sakaszli, 26-10-2012

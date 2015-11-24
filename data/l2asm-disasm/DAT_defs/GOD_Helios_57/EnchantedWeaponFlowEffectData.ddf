@@ -10,7 +10,7 @@ ORD_IGNORE = NO;
 
 {
 	UINT tag;
-	UINT Item_cnt;; // This value defines how many items contained in every single data row.
+	UINT Item_cnt; // This value defines how many items contained in every single data row.
 
     UINT Item_type_0;
         ENBBY = [(Item_cnt:-1,1)];
