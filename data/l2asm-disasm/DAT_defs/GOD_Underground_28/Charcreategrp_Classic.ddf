@@ -1,6 +1,6 @@
 //early version submitted by Allen (L2Sexi Server)
 FS = "\t";
-RECCNT = 20;
+RECCNT = 24; //Fixed in GoD: Ertheia by rocksnow 2014/05/12
 HEADER = YES;
 MTXCNT_OUT = YES;
 MATCNT_OUT = YES;

@@ -1,6 +1,6 @@
 //early version submitted by Allen (L2Sexi Server)
 FS = "\t";
-RECCNT = 18;
+RECCNT = 19;
 HEADER = YES;
 MTXCNT_OUT = YES;
 MATCNT_OUT = YES;

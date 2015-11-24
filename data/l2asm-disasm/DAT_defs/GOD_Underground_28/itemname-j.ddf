@@ -1,3 +1,4 @@
+//early version submitted by Allen (L2Sexi Server)
 FS = "\t";
 RECCNT = OFF;
 HEADER = YES;
@@ -9,10 +10,10 @@ ORD_IGNORE = NO;
 {
 	UINT id;
 	UNICODE name;
-	ASCF add_name;
+	ASCF add_name; //Data structure changed to ASCF 2014/02/23
 	ASCF description;
 	INT popup;
-	INT unk1;
+	INT unk1; //Modified by Syncia, but I'm not pretty sure its data type.
 	INT unk2;
 	UNICODE Card;
 	UINT unk_5[7];

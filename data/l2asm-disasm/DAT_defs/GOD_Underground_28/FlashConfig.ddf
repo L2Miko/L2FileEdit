@@ -1,4 +1,4 @@
-//L2Miko
+//early version submitted by Allen (L2Sexi Server)
 FS = "\t";
 RECCNT = 1;
 HEADER = YES;
@@ -10,5 +10,6 @@ ORD_IGNORE = NO;
 {
 	UCHAR coint;
 	UCHAR Unknown;
-	ASCF list[87];
+	ASCF list[148];		 //Fixed in Dark Night Rhapsody: Taiwan client by Syncia 2015/10/22
+	//ASCF list[150];	// for JP...
 }
