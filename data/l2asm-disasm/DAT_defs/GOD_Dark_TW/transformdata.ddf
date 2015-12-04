@@ -1,0 +1,17 @@
+//Goddess of Destruction Epeisodion Client use, created by syncia.
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT id;
+  UINT Transform;
+  UINT Group;
+  UINT Unknown;
+  UNICODE Description_1;
+  UNICODE Description_2;
+  UINT UNK[5];
+}

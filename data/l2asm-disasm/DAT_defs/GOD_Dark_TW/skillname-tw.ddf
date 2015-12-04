@@ -1,0 +1,21 @@
+//Modified  in Epic of tale:Dark night Rhapsody Taiwan client by Syncia  2015/10/22
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT id;
+	UINT level;
+    UINT UNK_0;
+    INT UNK_1;
+	ASCF skill_name;
+	ASCF skill_description1;
+	ASCF skill_description2;
+	ASCF skill_enhance1;
+    ASCF skill_enhance2;
+    ASCF skill_enhance3;
+    ASCF skill_enhance4;
+}

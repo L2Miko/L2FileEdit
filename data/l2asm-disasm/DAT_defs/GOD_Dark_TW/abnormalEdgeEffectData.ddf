@@ -1,0 +1,17 @@
+////Created in Epic of tale:Dark night Rhapsody Taiwan client by Syncia  2015/10/22
+FS="\t";
+RECCNT=-1;
+HEADER=YES;
+MTXCNT_OUT=YES;
+MATCNT_OUT=YES;
+MAGIC=0;
+ORD_IGNORE=NO;
+{
+    UINT id; 
+    UINT unk[4]; 
+    INT UNK_2;
+    FLOAT UnknownFloat[6];
+    UINT unk_3;
+    UINT unk_4;
+    UINT unk_5;
+}

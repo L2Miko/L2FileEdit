@@ -1,0 +1,20 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+ORD_IGNORE = NO;
+
+{
+	UINT Race;
+    UINT STR;
+    UINT DEX;
+    UINT CON;
+    UINT INTE;
+    UINT WIT;
+    UINT MEN;
+    UINT LUC;
+    UINT CHA;
+	ASCF name;
+}

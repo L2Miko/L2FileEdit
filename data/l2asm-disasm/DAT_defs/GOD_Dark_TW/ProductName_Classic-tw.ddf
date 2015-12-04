@@ -1,0 +1,16 @@
+//Modified in Epic of tale:Dark night Rhapsody Taiwan client by Syncia 2015/10/26
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT id;
+	UNICODE name;
+	ASCF str;
+	UNICODE icon;
+    UNICODE icon_panel;
+	ASCF Desc;
+}

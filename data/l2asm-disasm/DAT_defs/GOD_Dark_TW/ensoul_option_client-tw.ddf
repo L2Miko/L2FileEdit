@@ -1,0 +1,18 @@
+//Created in Epic of tale:Dark night Rhapsody Taiwan client by Syncia  2015/10/21
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT type;
+	UINT id;
+	UINT item_Count;
+    ASCF ensoul_name;
+    ASCF ensoul_effect;
+    UNICODE ensoul_icon;
+    UNICODE ensoul_level;
+
+}

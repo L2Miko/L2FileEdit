@@ -1,0 +1,13 @@
+// Created by syncia for GoD Dimension stranger 2014/04/23
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+ORD_IGNORE = NO;
+
+{
+	UINT Item_Type;
+	UINT Unknown_Item[7];
+	CHEX Color_data[4];
+}

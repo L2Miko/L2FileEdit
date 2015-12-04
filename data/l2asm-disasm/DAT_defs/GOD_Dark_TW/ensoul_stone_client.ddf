@@ -1,0 +1,14 @@
+//Created in Epic of tale:Dark night Rhapsody Taiwan client by Syncia  2015/10/21
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT id;
+	UINT tag;
+	UCHAR count;
+    UINT value[count];
+}

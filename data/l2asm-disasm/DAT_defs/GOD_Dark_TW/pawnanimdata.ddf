@@ -1,0 +1,18 @@
+//early version submitted by Allen (L2Sexi Server)
+//Fixed in Epic of tale:Dark night Rhapsody Taiwan client by Syncia 2015/10/26
+FS = "\t";
+RECCNT = -1;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+ORD_IGNORE = NO;
+
+{
+	UNICODE character;
+	UNICODE anim_lista[818];
+	UNICODE anim_listb[818];
+	UNICODE anim_listc[818];
+	UNICODE anim_listd[819];
+	FLOAT UNK1[317];
+	UINT UNK2[158];
+}

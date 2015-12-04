@@ -1,0 +1,20 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = -1;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT ID;
+	ASCF Mission_Name;
+	ASCF Objective;
+	UINT Unk;
+	ASCF Unk2[2];
+	UINT Unk3;
+	UINT Unk4;
+	ASCF Text;
+	INT Unk5;
+//	UINT Uknown_Item[2]; // This item is removed from GoD: Ertheia Taiwan client in 2014/7/9
+//	UINT UNK6; // This item is removed from GoD: Ertheia Taiwan client in 2014/7/9
+}
