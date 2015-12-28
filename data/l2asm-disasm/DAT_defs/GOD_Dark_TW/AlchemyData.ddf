@@ -1,0 +1,21 @@
+//AlchemyData.ddf used in GOD:Dimension Stranger, created by Syncia 2014-02-09
+FS="\t";
+RECCNT=-1;
+HEADER=YES;
+MTXCNT_OUT=YES;
+MATCNT_OUT=YES;
+MAGIC=0;
+ORD_IGNORE=NO;
+{
+    UINT id;
+    UINT UNK_0;
+    UINT UNK_1;
+    UINT UNK_2;
+    UINT UNK_3;
+    FLOAT UNK_4;
+    UCHAR CNT_0;
+    UINT Unknown_Item_A_[CNT_0];
+    UCHAR CNT_1;
+    UINT Unknown_Item_B_[CNT_1];
+    UINT Unknown_[4];  
+}

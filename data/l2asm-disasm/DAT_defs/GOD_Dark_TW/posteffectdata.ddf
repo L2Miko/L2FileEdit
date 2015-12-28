@@ -1,0 +1,18 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t";
+HEADER = 1;
+RECCNT = -1;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT ID;
+	UNICODE effect;
+	UINT UNK0;
+	UINT UNK1;
+	FLOAT UNK_F0;
+	UINT UNK2;
+	FLOAT UNK_F1[6];
+	UINT UNK3[4];
+}

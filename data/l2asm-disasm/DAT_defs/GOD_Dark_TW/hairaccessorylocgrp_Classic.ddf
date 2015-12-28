@@ -1,0 +1,41 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UNICODE name;
+	FLOAT floats_1[3];
+	INT     ints_1[3];
+	FLOAT floats_2[3];
+	INT     ints_2[3];
+	FLOAT floats_3[3];
+	INT     ints_3[3];
+	FLOAT floats_4[3];
+	INT     ints_4[3];
+	FLOAT floats_5[3];
+	INT     ints_5[3];
+	FLOAT floats_6[3];
+	INT     ints_6[3];
+	FLOAT floats_7[3];
+	INT     ints_7[3];
+	FLOAT floats_8[3];
+	INT     ints_8[3];
+	FLOAT floats_9[3];
+	INT     ints_9[3];
+	FLOAT floats_A[3];
+	INT     ints_A[3];
+	FLOAT floats_B[3];
+	INT     ints_B[3];
+	FLOAT floats_C[3];
+	INT     ints_C[3];
+	FLOAT floats_D[3];
+	INT     ints_D[3];
+	FLOAT floats_E[3];
+	INT     ints_E[3];
+	FLOAT floats_F[3];
+	INT     ints_F[3];
+
+}

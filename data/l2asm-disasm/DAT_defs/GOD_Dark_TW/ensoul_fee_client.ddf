@@ -1,0 +1,64 @@
+//Created in Epic of tale:Dark night Rhapsody Taiwan client by Syncia 2015/10/15
+
+FS = "\t";
+RECCNT = -1;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+ORD_IGNORE = NO;
+
+{
+    UINT fee_id0;
+    UINT fee_cntr0;
+    UINT fee_byte0;
+        ENBBY = [(fee_cntr0:-1,1)];
+        ENBBY = [(fee_cntr0:-2,2)];
+    UINT fee_byte1;
+        ENBBY = [(fee_cntr0:-1,1)];
+        ENBBY = [(fee_cntr0:-2,2)];
+    UINT fee_byte2;
+        ENBBY = [(fee_cntr0:-2,2)];
+    UINT fee_byte3;
+        ENBBY = [(fee_cntr0:-2,2)];
+
+    UINT fee_cntr1;
+    UINT fee_byte4;
+        ENBBY = [(fee_cntr1:-1,1)];
+        ENBBY = [(fee_cntr1:-2,2)];
+    UINT fee_byte5;
+        ENBBY = [(fee_cntr1:-1,1)];
+        ENBBY = [(fee_cntr1:-2,2)];
+    UINT fee_byte6;
+        ENBBY = [(fee_cntr1:-2,2)];
+    UINT fee_byte7;
+        ENBBY = [(fee_cntr1:-2,2)];
+
+    UINT fee_cntr2;
+    UINT fee_byte8;
+        ENBBY = [(fee_cntr2:-1,1)];
+        ENBBY = [(fee_cntr2:-2,2)];
+    UINT fee_byte9;
+        ENBBY = [(fee_cntr2:-1,1)];
+        ENBBY = [(fee_cntr2:-2,2)];
+    UINT fee_byte10;
+        ENBBY = [(fee_cntr2:-2,2)];
+    UINT fee_byte11;
+        ENBBY = [(fee_cntr2:-2,2)];
+
+    UINT fee_cntr3;
+    UINT fee_byte12;
+        ENBBY = [(fee_cntr3:-1,1)];
+        ENBBY = [(fee_cntr3:-2,2)];
+    UINT fee_byte13;
+        ENBBY = [(fee_cntr3:-1,1)];
+        ENBBY = [(fee_cntr3:-2,2)];
+    UINT fee_byte14;
+        ENBBY = [(fee_cntr3:-2,2)];
+    UINT fee_byte15;
+        ENBBY = [(fee_cntr3:-2,2)];
+
+
+
+
+//	UINT ensoul_fee[150];
+}

@@ -1,0 +1,122 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t"; 
+HEADER = 1; 
+RECCNT = 19; 
+MTXCNT_OUT = 1; 
+MATCNT_OUT = 1; 
+ORD_IGNORE = 0; 
+{ 
+   UINT cnt;
+// Following items are changed dramatically in GoD: Dimension Stranger (ertheia) 2014/05/09
+   UINT list_A;
+    ENBBY = [(cnt:-1,1)];
+    ENBBY = [(cnt:-2,2)];
+    ENBBY = [(cnt:-4,4)];
+
+   UINT id_A;
+    ENBBY = [(cnt:-1,1)];
+    ENBBY = [(cnt:-2,2)];
+    ENBBY = [(cnt:-4,4)];
+
+   UINT UNK_A0;    
+    ENBBY = [(cnt:-1,1)];
+    ENBBY = [(cnt:-2,2)];
+    ENBBY = [(cnt:-4,4)];
+
+   UINT UNK_A1;
+    ENBBY = [(cnt:-1,1)];
+    ENBBY = [(cnt:-2,2)];
+    ENBBY = [(cnt:-4,4)];
+
+   UINT UNK_A2;
+    ENBBY = [(cnt:-1,1)];
+    ENBBY = [(cnt:-2,2)];
+    ENBBY = [(cnt:-4,4)];
+
+   UINT id_A;
+    ENBBY = [(cnt:-1,1)];
+    ENBBY = [(cnt:-2,2)];
+    ENBBY = [(cnt:-4,4)];
+
+   UNICODE Name[5];
+    ENBBY = [(cnt:-1,1)];
+    ENBBY = [(cnt:-2,2)];
+    ENBBY = [(cnt:-4,4)];
+
+
+   UINT list_B;
+    ENBBY = [(cnt:-2,2)];
+    ENBBY = [(cnt:-4,4)];
+
+   UINT id_B;
+    ENBBY = [(cnt:-2,2)];
+    ENBBY = [(cnt:-4,4)];
+   UINT UNK_B0;
+    ENBBY = [(cnt:-2,2)];
+    ENBBY = [(cnt:-4,4)];
+   UINT UNK_B1;
+    ENBBY = [(cnt:-2,2)];
+    ENBBY = [(cnt:-4,4)];
+   UINT UNK_B2;
+    ENBBY = [(cnt:-2,2)];
+    ENBBY = [(cnt:-4,4)];
+   UINT id;
+    ENBBY = [(cnt:-2,2)];
+    ENBBY = [(cnt:-4,4)];
+   UNICODE Name2[5];
+    ENBBY = [(cnt:-2,2)];
+    ENBBY = [(cnt:-4,4)]; 
+
+   UINT list_C;
+    ENBBY = [(cnt:-1,3)];
+    ENBBY = [(cnt:-4,4)];
+   UINT id_C;
+    ENBBY = [(cnt:-1,3)];
+    ENBBY = [(cnt:-4,4)];
+   UINT UNK_C0;
+    ENBBY = [(cnt:-1,3)];
+    ENBBY = [(cnt:-4,4)];
+   UINT UNK_C1;
+    ENBBY = [(cnt:-1,3)];
+    ENBBY = [(cnt:-4,4)];
+   UINT UNK_C2;
+    ENBBY = [(cnt:-1,3)];
+    ENBBY = [(cnt:-4,4)];
+   UINT id_C;
+    ENBBY = [(cnt:-1,3)];
+    ENBBY = [(cnt:-4,4)];
+   UNICODE Name3[5];
+    ENBBY = [(cnt:-1,3)];
+    ENBBY = [(cnt:-4,4)]; 
+
+   UINT list_D;
+    ENBBY = [(cnt:-4,4)];
+   UINT id;
+    ENBBY = [(cnt:-4,4)];
+   UINT UNK_D0;
+    ENBBY = [(cnt:-4,4)];
+   UINT UNK_D1;
+    ENBBY = [(cnt:-4,4)];
+   UINT UNK_D2;
+    ENBBY = [(cnt:-4,4)];
+   UINT id_D;
+    ENBBY = [(cnt:-4,4)];
+   UNICODE Name4[5]; 
+    ENBBY = [(cnt:-4,4)];
+
+   UINT list_E;
+    ENBBY = [(cnt,5)];
+   UINT id_E;
+    ENBBY = [(cnt,5)];
+   UINT UNK_E0;
+    ENBBY = [(cnt,5)];
+   UINT UNK_E1;
+    ENBBY = [(cnt,5)];
+   UINT UNK_E2;
+    ENBBY = [(cnt,5)];
+   UINT id_E;
+    ENBBY = [(cnt,5)];
+   UNICODE Name5[5];
+    ENBBY = [(cnt,5)];
+
+}

@@ -1,0 +1,101 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = YES;
+
+{
+	UINT tag;
+	UINT id;
+	UINT drop_type;
+	UINT drop_anim_type;
+	UINT drop_radius;
+	UINT drop_height;
+	UINT UNK_0;
+	UNICODE drop_mesh1;
+	UNICODE drop_mesh2;
+	UNICODE drop_mesh3;
+	UNICODE drop_tex1;
+	UNICODE drop_tex2;
+	UNICODE drop_tex3;
+	UNICODE drop_extratex1;
+	UINT newdata[8];
+	UNICODE icon[5];
+	INT durability;
+	UINT weight;
+	UINT material;
+	UINT crystallizable;
+	HEX UNK_3;
+	UINT UNK_4_cnt;
+	UINT UNK_5;         //It not a counter any more in Dimension Stranger, modified by Syncia in 2014/04/18
+	UINT UNK_5_tab[2];
+	UNICODE UNK_item;   //It's just a speculation because I don't know the data type here, added by Syncia in 2014/04/18
+        ENBBY = [(UNK_4_cnt,1)];
+	UNICODE Icon_panel; // It seems to appear in Dimension Stranger, added by Syncia in 2014/04/18
+	ASCF complete_drop_sound; // It seems to appear in Epeisodion, added by Syncia in 2013/11/23
+    UINT Unknown_item1; // It seems to appear in Epeisodion, added by Syncia in 2013/11/23
+    UINT Unknown_item2; // It seems to appear in Epeisodion, added by Syncia in 2013/11/23
+
+	MTX m_HumnFigh;
+	MTX3 m_HumnFigh_add;
+	MTX f_HumnFigh;
+	MTX3 f_HumnFigh_add;
+
+	MTX m_DarkElf;
+	MTX3 m_DarkElf_add;
+	MTX f_DarkElf;
+	MTX3 f_DarkElf_add;
+
+	MTX m_Dorf;
+	MTX3 m_Dorf_add;
+	MTX f_Dorf;
+	MTX3 f_Dorf_add;
+
+	MTX m_Elf;
+	MTX3 m_Elf_add;
+	MTX f_Elf;
+	MTX3 f_Elf_add;
+
+	MTX m_HumnMyst;
+	MTX3 m_HumnMyst_add;
+	MTX f_HumnMyst;
+	MTX3 f_HumnMyst_add;
+
+	MTX m_OrcFigh;
+	MTX3 m_OrcFigh_add;
+	MTX f_OrcFigh;
+	MTX3 f_OrcFigh_add;
+
+	MTX m_OrcMage;
+	MTX3 m_OrcMage_add;
+	MTX f_OrcMage;
+	MTX3 f_OrcMage_add;
+
+	MTX m_Kamael;
+	MTX3 m_Kamael_add;
+	MTX f_Kamael;
+	MTX3 f_Kamael_add;
+
+	MTX NPC;
+	MTX3 NPC_add;
+
+	MTX f_Ertheia;
+	MTX3 f_Ertheia_add;
+	MTX m_Ertheia;
+	MTX3 m_Ertheia_add;
+
+	UNICODE att_eff;
+	UINT item_sound_cnt;
+	UNICODE item_sound[item_sound_cnt];
+	UNICODE drop_sound;
+	UNICODE equip_sound;
+	UINT UNK_6;
+	UINT UNK_7;
+	UINT armor_type;
+	UINT crystal_type;
+	UINT avoid_mod;
+	UINT UNK_8[3];
+	INT Reserved_item0; // It seems to appear in Epeisodion, added by Syncia in 2013/11/23
+}                

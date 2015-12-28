@@ -1,0 +1,16 @@
+// Goddess of Destruction Dimension stranger use, created by syncia 2014/04/19
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+ORD_IGNORE = NO;
+{
+	UINT tag;
+    UINT UNK_0;
+    UINT UNK_1;
+    UCHAR cnt;
+    UINT UNK_2[cnt];
+    FLOAT UNK_3;
+    FLOAT UNK_4;
+}
