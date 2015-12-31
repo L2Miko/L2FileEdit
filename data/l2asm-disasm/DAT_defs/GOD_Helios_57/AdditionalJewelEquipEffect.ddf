@@ -1,0 +1,16 @@
+//Goddess of Destruction Epeisodion Client use, created by syncia.
+
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+MAGIC = 0;
+ORD_IGNORE = NO;
+
+{
+	UINT Item;
+	UINT Max_Jewel_Equipped;
+	ASCF Jewel_Effect_0;
+	ASCF Jewel_Effect_1;
+}

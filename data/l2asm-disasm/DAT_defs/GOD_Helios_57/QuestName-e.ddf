@@ -1,0 +1,70 @@
+//L2Miko
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+MAGIC = 0;
+ORD_IGNORE = NO;
+
+{
+	UINT tag;
+	UINT quest_id;
+	INT quest_prog;
+	ASCF quest_name;
+	ASCF prog_name;
+	ASCF description;
+	UCHAR item_id_cnt;            //num of items to get
+	INT items[item_id_cnt];         //list of items to get by item_id
+	UCHAR item_unk_cnt;            //count of the items from cnt1 (should be same as cnt1)
+	INT items_unk[item_unk_cnt];      //num of each coressponding item (0 = infinity)
+	UCHAR item_count_cnt;            //num of items to get
+	INT item_count[item_count_cnt];         //list of items to get by item_id
+	FLOAT quest_x;         //x coord of current "pin" on map
+	FLOAT quest_y;         //y coord of current "pin" on map
+	FLOAT quest_z;         //z coord of current "pin" on map
+	UCHAR quest_pos_cnt;
+	FLOAT quest_x_1[quest_pos_cnt];
+	FLOAT quest_y_1[quest_pos_cnt];
+	FLOAT quest_z_1[quest_pos_cnt];
+
+	UCHAR UNK_2;
+	INT UNK_VAL[UNK_2];
+
+	INT lvl_min;         //lvl req to start quest
+	INT lvl_max;         //recommended lvl max
+	INT quest_type;         //0 = quests that lead to rewards (varka, summoning rb, coin quest, etc), 1 = quests that lead to special items (lures, wedding dress), 2 = repeatable, 3 = one time
+	ASCF entity_name;         //
+	INT get_item_in_quest;      //1 = get item in quest part, 0 = no item obtained in quest
+	INT UNK_3;            //1 = same tab stack, 0 = end of stack (ex: |11110|10| if ur in the 2nd stack id 6 or 7 in quest prog |12345|67| the displayed stack would be |167| in the display)
+	INT UNK_4;            //no clue
+	UCHAR UNK_5;      //who starts the quest
+	UINT contact_npc_id[UNK_5];            //no clue
+	FLOAT contact_npc_x;      //start quest x_loc
+	FLOAT contact_npc_y;      //start quest x_loc
+	FLOAT contact_npc_z;      //start quest x_loc
+	ASCF restricions;         //can be race or quest pre-reqs
+	ASCF short_description;
+	UCHAR req_class_cnt;      //race restriction count
+	UCHAR UNK_6;      //id of class that can do quest
+		ENBBY = [(req_class_cnt: 64, 64)];
+	UINT req_class[req_class_cnt];      //id of class that can do quest
+	UINT req_class_2[64];
+		ENBBY = [(req_class_cnt: 64, 64), (UNK_6: -1, 2)];
+
+	UCHAR req_item_cnt;            //item quest restriction start count
+	UINT req_item[req_item_cnt];      //id of items needed to do quest
+	UINT clan_pet_quest;      //0 = reg quest, 1 = pet/clan quest
+	UINT req_quest_complete;   //id of quest that must be completed first
+	UINT UNK_7;            //unknown all 0
+	UINT area_id;         //area id (goddard, rune, giran, etc)
+	UINT UNK_8;
+	UCHAR reward_id_cnt;
+	UINT reward_id[reward_id_cnt];
+	UCHAR reward_count_cnt;
+	UINT reward_count[reward_count_cnt];
+	UINT UNK_9[reward_count_cnt];
+	UCHAR parent_step_cnt;
+	INT parent_step[parent_step_cnt];
+	INT UNK_10[3];
+}

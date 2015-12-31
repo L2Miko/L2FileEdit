@@ -1,0 +1,20 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+MAGIC = 0;
+ORD_IGNORE = NO;
+
+{
+	UINT id;
+	UNICODE name;
+	ASCF add_name; //Data structure changed to ASCF 2014/02/23
+	ASCF description;
+	INT popup;
+	INT unk1;
+	INT unk2;
+	UNICODE Card;
+	UINT unk_5[7];
+}
