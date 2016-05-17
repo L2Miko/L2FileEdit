@@ -1,0 +1,20 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+MAGIC = 0;
+ORD_IGNORE = NO;
+
+{
+	UINT id;
+	UINT name_id;
+	UINT unk1;
+	ASCF description;
+	WORD unk2;
+	ASCF action;
+	UINT unk3;
+	WORD unk4;
+	CHAR unk5[12];
+}
