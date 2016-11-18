@@ -1,0 +1,60 @@
+// Helios (04.07.2016). Editors: Anonymous, Allen (L2Sexi), Hint.
+
+{
+  UINT tag;
+  UINT class_sid;
+  UINT mesh_sid;
+  UINT tex1_cnt;
+  UINT tex1_sid[tex1_cnt];
+  UINT tex2_cnt;
+  UINT tex2_sid[tex2_cnt];
+  CNTR skill_cnt;
+  UINT skill[skill_cnt];
+  FLOAT npc_speed;
+  UINT unk_1_cnt;
+  UINT unk_1_sid[unk_1_cnt];
+  CNTR snd1_cnt;
+  UINT snd1_sid[snd1_cnt];
+  CNTR snd2_cnt;
+  UINT snd2_sid[snd2_cnt];
+  CNTR snd3_cnt;
+  UINT snd3_sid[snd3_cnt];
+
+  UINT rb_effect_cnt;
+  UINT rb_effect_1_sid; ENBBY = [(rb_effect_cnt:1,1)]; ENBBY = [(rb_effect_cnt:2,2)]; ENBBY = [(rb_effect_cnt:4,4)];
+  FLOAT rb_effect_fl_1; ENBBY = [(rb_effect_cnt:1,1)]; ENBBY = [(rb_effect_cnt:2,2)]; ENBBY = [(rb_effect_cnt:4,4)];
+  UINT rb_effect_2_sid; ENBBY = [(rb_effect_cnt:2,2)]; ENBBY = [(rb_effect_cnt:4,4)];
+  FLOAT rb_effect_fl_2; ENBBY = [(rb_effect_cnt:2,2)]; ENBBY = [(rb_effect_cnt:4,4)];
+  UINT rb_effect_3_sid; ENBBY = [(rb_effect_cnt,3)]; ENBBY = [(rb_effect_cnt:4,4)];
+  FLOAT rb_effect_fl_3; ENBBY = [(rb_effect_cnt,3)]; ENBBY = [(rb_effect_cnt:4,4)];
+  UINT rb_effect_4_sid; ENBBY = [(rb_effect_cnt:4,4)];
+  FLOAT rb_effect_fl_4; ENBBY = [(rb_effect_cnt:4,4)];
+  UINT rb_effect_5_sid; ENBBY = [(rb_effect_cnt,5)];
+  FLOAT rb_effect_fl_5; ENBBY = [(rb_effect_cnt,5)];
+
+  CNTR quest_cnt;
+  UINT quest[quest_cnt];
+  CNTR unk_2_cnt;
+  INT unk_2[unk_2_cnt];
+  UINT effect_sid;
+  UINT unk_3;
+  FLOAT sound_rad;
+  FLOAT sound_vol;
+  FLOAT sound_rnd;
+  UINT unk_4;
+  UINT unk_5;
+  UINT unk_6_cnt;
+  UINT unk_6_sid[unk_6_cnt];
+  UINT unk_7[4];
+  FLOAT unk_8;
+  UINT unk_9;
+  UINT icon_sid;
+  UINT unk_10;
+  FLOAT unk_11[12];
+  UINT unk_12;
+  UINT unk_13;
+  UINT unk_14;
+  UINT unk_15;
+  UINT unk_16;
+  INT unk_17;
+}

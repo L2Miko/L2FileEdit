@@ -1,0 +1,21 @@
+// Helios (04.07.2016). Editors: Anonymous, Hint.
+
+{
+  UINT id;
+  UINT name_sid;
+  UINT add_name_sid;
+  ASCF description;
+  WORD popup;
+  ASCF action;
+  INT unk_1;
+  WORD unk_2;
+  CHAR unk_3;
+  INT unk_4;
+  CHAR can_exchange?;
+  CHAR can_drop?;
+  CHAR can_delete?;
+  CHAR can_private_store?;
+  CHAR category?;
+  CHAR can_sell?;
+  CHAR can_commission_shop?;
+}

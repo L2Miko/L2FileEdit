@@ -1,0 +1,16 @@
+// Helios (04.07.2016). Editors: Anonymous, Hint.
+
+{
+  UINT id;
+  UINT unk_1;
+  ASCF message;
+  UINT group;
+  CHEX rgba[4];
+  INT sound_sid;
+  INT msg_id_sid;
+  UINT unk_2[5];
+  ASCF sub_msg;
+  ASCF unk_3;
+  ASCF unk_4; // CHAR?
+  ASCF type;
+}

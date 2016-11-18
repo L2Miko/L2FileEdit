@@ -1,0 +1,15 @@
+// Helios (04.07.2016). Editors: Anonymous, Allen (L2Sexi), Hint.
+
+{
+  UINT nbr;
+  UINT zone_color_id;
+  UINT x_world_grid;
+  UINT y_world_grid;
+  FLOAT top_z;
+  FLOAT bottom_z;
+  ASCF zone_name;
+  INT coords?[6];
+  FLOAT unk_1;
+  UINT map_sid;
+  INT dupa[5];
+}

@@ -1,0 +1,25 @@
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+MAGIC = 0;
+ORD_IGNORE = NO;
+
+{
+	UWORD id1;
+	UWORD id2;
+	WORD level1;
+	WORD level2;
+	UWORD id3;
+	UWORD id4;
+    WORD level3;
+    WORD level4;
+	ASCF name;
+	ASCF description;
+	ASCF desc_val;
+	ASCF desc_add1;
+	ASCF desc_val1;
+	ASCF desc_add2;
+	ASCF desc_val2;
+}
