@@ -11,7 +11,7 @@ ORD_IGNORE = NO;
 	ASCF Abnormal_Effect;
 	UINT UNK_0;
     UINT UNK_1;
-	ASCF Text;
+    UINT String_Id;
 	UINT UNK_2;
 	FLOAT UnknownFloat[7];
 }

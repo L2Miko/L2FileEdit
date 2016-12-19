@@ -10,6 +10,6 @@ ORD_IGNORE = NO;
 {
 	UINT id;
 	UINT id2;
-	UNICODE Name;
+    UINT String_Id;
 	ASCF Html_Color;
 }
