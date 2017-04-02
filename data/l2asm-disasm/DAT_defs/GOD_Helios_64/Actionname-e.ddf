@@ -16,9 +16,9 @@ ORD_IGNORE = NO;
 	CNTR cat2_cnt;
 	INT c[cat2_cnt];
 	ASCF cmd;
-	ASCF name1;
-	ASCF icon;
+	UINT name1;
+	UINT icon;
 	ASCF name2;
 	UINT UNK1;
-	UNICODE desc;
+	UINT desc;
 }
