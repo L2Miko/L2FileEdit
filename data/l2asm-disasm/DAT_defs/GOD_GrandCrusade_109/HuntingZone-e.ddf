@@ -1,0 +1,19 @@
+// Grand Crusade (03.04.2017). Editors: czardadius, Hint.
+
+{
+  UINT id;
+  UINT type;
+  UINT level_min;
+  UINT level_max;
+  FLOAT loc_x;
+  FLOAT loc_y;
+  FLOAT loc_z;
+  ASCF extra;
+  UINT search_zone;
+  ASCF name;
+  WORD region;
+  INT npc;
+  CNTR quest_cnt;
+  WORD quest[quest_cnt];
+  INT instant_zone;
+}

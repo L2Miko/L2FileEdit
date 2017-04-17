@@ -1,0 +1,19 @@
+// Grand Crusade (03.04.2017). Editors: Anonymous, Allen (L2Sexi), Hint.
+
+{
+  WORD id;
+  WORD grid_x;
+  WORD grid_y;
+  FLOAT z_top;
+  FLOAT z_bottom;
+  ASCF zone_name;
+  WORD unk_1[2];
+  INT x_1;
+  INT y_1;
+  WORD unk_2[2];
+  FLOAT unk_3;
+  INT map_sid;
+  WORD unk_4[4];
+  INT x_2;
+  INT y_2;
+}

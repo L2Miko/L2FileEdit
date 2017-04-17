@@ -1,0 +1,15 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+MAGIC = 0;
+ORD_IGNORE = NO;
+
+{
+	UINT ID;
+	UINT nID[12];
+	INT UNK_0;
+	UINT UNK[4]; //modified by syncia in Korean client: Dimension stranger 2014/04/17
+}

@@ -1,0 +1,24 @@
+// by gyo
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+MAGIC = 0;
+ORD_IGNORE = NO;
+
+{
+	INT id;
+	INT UNK[8];
+	INT UNK0;
+	UINT cnt0;
+	INT UNK0_0[cnt0];
+	INT UNK0_1[cnt0];
+	UCHAR cnt1;
+	INT UNK1[cnt1];
+	UCHAR cnt2;
+	INT UNK2[cnt2];
+	INT UNK3;
+    INT UNK5;
+	UCHAR UNK4;
+}

@@ -1,0 +1,56 @@
+// Grand Crusade (03.04.2017). Editors: Anonymous, Allen (L2Sexi), Hint.
+
+{
+  UWORD tag;
+  UINT class_sid;
+  UINT mesh_sid;
+  CNTR tex_1_cnt;
+  UINT tex_1_sid[tex_1_cnt];
+  UINT tex_2_cnt;
+  UINT tex_2_sid[tex_2_cnt];
+  CNTR skill_cnt;
+  UWORD skill[skill_cnt];
+  FLOAT npc_speed;
+  CNTR snd_1_cnt;
+  UINT snd_1_sid[snd_1_cnt];
+  CNTR snd_2_cnt;
+  UINT snd_2_sid[snd_2_cnt];
+  CNTR snd_3_cnt;
+  UINT snd_3_sid[snd_3_cnt];
+
+  CHAR rb_effect_cnt;
+  UINT rb_effect_1_sid; ENBBY = [(rb_effect_cnt:1,1)]; ENBBY = [(rb_effect_cnt:2,2)]; ENBBY = [(rb_effect_cnt:4,4)];
+  FLOAT rb_effect_fl_1; ENBBY = [(rb_effect_cnt:1,1)]; ENBBY = [(rb_effect_cnt:2,2)]; ENBBY = [(rb_effect_cnt:4,4)];
+  UINT rb_effect_2_sid; ENBBY = [(rb_effect_cnt:2,2)]; ENBBY = [(rb_effect_cnt:4,4)];
+  FLOAT rb_effect_fl_2; ENBBY = [(rb_effect_cnt:2,2)]; ENBBY = [(rb_effect_cnt:4,4)];
+  UINT rb_effect_3_sid; ENBBY = [(rb_effect_cnt,3)]; ENBBY = [(rb_effect_cnt:4,4)];
+  FLOAT rb_effect_fl_3; ENBBY = [(rb_effect_cnt,3)]; ENBBY = [(rb_effect_cnt:4,4)];
+  UINT rb_effect_4_sid; ENBBY = [(rb_effect_cnt:4,4)];
+  FLOAT rb_effect_fl_4; ENBBY = [(rb_effect_cnt:4,4)];
+  UINT rb_effect_5_sid; ENBBY = [(rb_effect_cnt,5)];
+  FLOAT rb_effect_fl_5; ENBBY = [(rb_effect_cnt,5)];
+
+  CNTR quest_cnt;
+  CHEX quest_1[quest_cnt];
+  CHEX quest_2[quest_cnt];
+  CHEX quest_3[quest_cnt];
+
+  UINT effect_sid;
+  UCHAR sound_rad;
+  UCHAR sound_vol;
+  UCHAR sound_rnd;
+  CHAR unk_1[2];
+  UINT unk_2_cnt;
+  UINT unk_2_sid[unk_2_cnt];
+  WORD unk_3[2];
+  FLOAT unk_4;
+  UINT unk_5;
+  UINT icon_sid;
+  CHAR unk_6;
+  WORD unk_7[2];
+  FLOAT unk_8[4];
+  UINT unk_9[3];
+  HEX hp[2]; // double
+  HEX mp[2]; // double
+  WORD unk_10;
+}

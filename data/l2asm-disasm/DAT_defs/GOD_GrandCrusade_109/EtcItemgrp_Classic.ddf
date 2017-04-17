@@ -1,0 +1,43 @@
+// Helios (04.07.2016). Editors: Anonymous, Allen (L2Sexi), Hint.
+
+{
+  CHAR tag;
+  UINT id;
+  CHAR drop_type;
+  CHAR drop_anim_type;
+  CHAR drop_radius;
+  CHAR drop_height;
+
+  CHAR mesh_a_cnt;
+  UINT mesh_a_1_sid; ENBBY = [(mesh_a_cnt:1,1)]; ENBBY = [(mesh_a_cnt:2,2)];
+  CNTR tex_a_1_cnt; ENBBY = [(mesh_a_cnt:1,1)]; ENBBY = [(mesh_a_cnt:2,2)];
+  UINT tex_a_1_sid[tex_a_1_cnt]; ENBBY = [(mesh_a_cnt:1,1)]; ENBBY = [(mesh_a_cnt:2,2)];
+  UINT mesh_a_2_sid; ENBBY = [(mesh_a_cnt:2,2)];
+  CNTR tex_a_2_cnt; ENBBY = [(mesh_a_cnt:2,2)];
+  UINT tex_a_2_sid[tex_a_2_cnt]; ENBBY = [(mesh_a_cnt:2,2)];
+
+  UINT icon_sid[5];
+  WORD durability;
+  WORD weight;
+  CHAR material;
+  CHAR crystallizable;
+  CNTR quest_cnt;
+  UWORD quest[quest_cnt];
+  CHAR color;
+  CHAR blessed; // -1 (bound), 0, 1 (blessed)
+  WORD unk_1;
+  UINT icon_ext_sid;
+  UINT dropsound_sid;
+  CHAR unk_2; // 1-5
+
+  CNTR mesh_b_cnt;
+  UINT mesh_b_sid[mesh_b_cnt];
+  CNTR tex_b_cnt;
+  UINT tex_b_sid[tex_b_cnt];
+
+  UINT item_sound_sid;
+  UINT equip_sound_sid;
+  CHAR stackable;
+  INT family;
+  CHAR grade;
+}

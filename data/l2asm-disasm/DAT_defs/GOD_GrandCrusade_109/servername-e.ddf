@@ -1,0 +1,7 @@
+// Helios (04.07.2016). Editors: Anonymous, Hint.
+
+{
+  UINT server_id;
+  UINT unk;
+  ASCF server_name;
+}

@@ -1,0 +1,20 @@
+// Helios (04.07.2016). Editors: Anonymous, Allen (L2Sexi), Hint.
+
+{ 
+  UINT id;
+  WORD pdef;
+  WORD mdef;
+  WORD patt;
+  WORD matt;
+  WORD speed;
+  FLOAT avoid_mod;
+  FLOAT unk_1;
+  FLOAT critical;
+  FLOAT unk_2;
+  CHAR unk_3;
+  WORD shield_pdef;	
+  CHAR shield_rate;
+  FLOAT hit_mod;
+  FLOAT unk_4;
+  UWORD unk_5;
+}

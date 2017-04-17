@@ -1,0 +1,15 @@
+// Grand Crusade (03.04.2017). Editors: Anonymous, Hint.
+
+{
+  UINT nbr;
+  UINT tag;
+  UINT id;
+  ASCF castle_name;
+  ASCF location;
+  ASCF desc;
+  INT extra1_sid;
+  INT extra2_sid;
+  INT extra3_sid;
+  ASCF extra4;
+  WORD region;
+}

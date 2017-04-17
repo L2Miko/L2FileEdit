@@ -1,0 +1,52 @@
+// Ertheia (10.08.2014). Editors: Anonymous, Hint.
+
+{
+  ASCF name;
+  UINT id_mk;
+  UINT id_recipe;
+  UINT level;
+  UINT id_item;
+  UINT count;
+  UINT is_showtree;
+  UINT is_multiple_product;
+  UINT mp_cost;
+  UINT success_rate;
+
+  UINT mat_cnt;
+  UINT mat_id_1; ENBBY = [(mat_cnt:1,1)]; ENBBY = [(mat_cnt:2,2)]; ENBBY = [(mat_cnt:4,4)]; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_cnt_1; ENBBY = [(mat_cnt:1,1)]; ENBBY = [(mat_cnt:2,2)]; ENBBY = [(mat_cnt:4,4)]; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_recipe_1; ENBBY = [(mat_cnt:1,1)]; ENBBY = [(mat_cnt:2,2)]; ENBBY = [(mat_cnt:4,4)]; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_id_2; ENBBY = [(mat_cnt:2,2)]; ENBBY = [(mat_cnt:4,4)]; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_cnt_2; ENBBY = [(mat_cnt:2,2)]; ENBBY = [(mat_cnt:4,4)]; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_recipe_2; ENBBY = [(mat_cnt:2,2)]; ENBBY = [(mat_cnt:4,4)]; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_id_3; ENBBY = [(mat_cnt,3)]; ENBBY = [(mat_cnt:4,4)]; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_cnt_3; ENBBY = [(mat_cnt,3)]; ENBBY = [(mat_cnt:4,4)]; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_recipe_3; ENBBY = [(mat_cnt,3)]; ENBBY = [(mat_cnt:4,4)]; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_id_4; ENBBY = [(mat_cnt:4,4)]; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_cnt_4; ENBBY = [(mat_cnt:4,4)]; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_recipe_4; ENBBY = [(mat_cnt:4,4)]; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_id_5; ENBBY = [(mat_cnt,5)]; ENBBY = [(mat_cnt,6)]; ENBBY = [(mat_cnt,7)]; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_cnt_5; ENBBY = [(mat_cnt,5)]; ENBBY = [(mat_cnt,6)]; ENBBY = [(mat_cnt,7)]; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_recipe_5; ENBBY = [(mat_cnt,5)]; ENBBY = [(mat_cnt,6)]; ENBBY = [(mat_cnt,7)]; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_id_6; ENBBY = [(mat_cnt,6)]; ENBBY = [(mat_cnt,7)]; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_cnt_6; ENBBY = [(mat_cnt,6)]; ENBBY = [(mat_cnt,7)]; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_recipe_6; ENBBY = [(mat_cnt,6)]; ENBBY = [(mat_cnt,7)]; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_id_7; ENBBY = [(mat_cnt,7)]; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_cnt_7; ENBBY = [(mat_cnt,7)]; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_recipe_7; ENBBY = [(mat_cnt,7)]; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_id_8; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_cnt_8; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_recipe_8; ENBBY = [(mat_cnt:8,8)];
+  UINT mat_id_9; ENBBY = [(mat_cnt,9)]; ENBBY = [(mat_cnt,10)]; ENBBY = [(mat_cnt,11)]; ENBBY = [(mat_cnt,12)];
+  UINT mat_cnt_9; ENBBY = [(mat_cnt,9)]; ENBBY = [(mat_cnt,10)]; ENBBY = [(mat_cnt,11)]; ENBBY = [(mat_cnt,12)];
+  UINT mat_recipe_9; ENBBY = [(mat_cnt,9)]; ENBBY = [(mat_cnt,10)]; ENBBY = [(mat_cnt,11)]; ENBBY = [(mat_cnt,12)];
+  UINT mat_id_10; ENBBY = [(mat_cnt,10)]; ENBBY = [(mat_cnt,11)]; ENBBY = [(mat_cnt,12)];
+  UINT mat_cnt_10; ENBBY = [(mat_cnt,10)]; ENBBY = [(mat_cnt,11)]; ENBBY = [(mat_cnt,12)];
+  UINT mat_recipe_10; ENBBY = [(mat_cnt,10)]; ENBBY = [(mat_cnt,11)]; ENBBY = [(mat_cnt,12)];
+  UINT mat_id_11; ENBBY = [(mat_cnt,11)]; ENBBY = [(mat_cnt,12)];
+  UINT mat_cnt_11; ENBBY = [(mat_cnt,11)]; ENBBY = [(mat_cnt,12)];
+  UINT mat_recipe_11; ENBBY = [(mat_cnt,11)]; ENBBY = [(mat_cnt,12)];
+  UINT mat_id_12; ENBBY = [(mat_cnt,12)];
+  UINT mat_cnt_12; ENBBY = [(mat_cnt,12)];
+  UINT mat_recipe_12; ENBBY = [(mat_cnt,12)];
+}

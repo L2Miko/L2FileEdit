@@ -1,0 +1,10 @@
+// Grand Crusade (03.04.2017). Editors: Hint.
+
+{
+  WORD id;
+  INT icon_sid[3];
+  INT x;
+  INT y;
+  WORD unk[4];
+  INT font_sid;
+}

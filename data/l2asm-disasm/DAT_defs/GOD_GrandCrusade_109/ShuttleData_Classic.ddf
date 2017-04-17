@@ -1,0 +1,29 @@
+//early version submitted by Allen (L2Sexi Server)
+
+FS = "\t";
+RECCNT = OFF;
+HEADER = YES;
+MTXCNT_OUT = YES;
+MATCNT_OUT = YES;
+MAGIC = 0;
+ORD_IGNORE = NO;
+
+{
+	UINT id;
+	INT unk0;
+	ASCF txt1;
+	UINT unk1;
+	ASCF txt2;
+	UINT unk2;
+	ASCF txt3;
+	INT unk3;
+	ASCF txt4;
+	UINT cnt0;
+	ASCF txt5[cnt0];
+	ASCF txt6;
+	ASCF txt7;
+	ASCF txt8;
+	UINT unk4;
+	UINT unk5;
+	UINT unk6;
+}
