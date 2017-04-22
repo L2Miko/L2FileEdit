@@ -12,7 +12,7 @@ ORD_IGNORE = NO;
 	UINT Transform;
 	UINT Group;
 	UINT Unknown;
-	UNICODE Description_1;
-	UNICODE Description_2;
+	UINT Description_1;
+	UINT Description_2;
 	UINT UNK[5];
 }
